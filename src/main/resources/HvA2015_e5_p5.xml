@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<projectPlanning xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="pps.xsd" 
+	year="2015">
+  <projects>
+    <project code="P100185">
+      <title>WIFI network installation - CON-05</title>
+      <startDate>2015-03-23</startDate>
+      <endDate>2015-07-17</endDate>
+      <commitments>
+        <hoursPerDay employee="100257">4</hoursPerDay>
+        <hoursPerDay employee="100265">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100424">
+      <title>Toilets refurbishment - SCP-04</title>
+      <startDate>2015-07-20</startDate>
+      <endDate>2015-12-28</endDate>
+      <commitments>
+        <hoursPerDay employee="100258">1</hoursPerDay>
+        <hoursPerDay employee="100263">1</hoursPerDay>
+        <hoursPerDay employee="100267">4</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100584">
+      <title>Lighting replacements - BPH-04</title>
+      <startDate>2015-06-22</startDate>
+      <endDate>2015-10-09</endDate>
+      <commitments>
+        <hoursPerDay employee="100257">1</hoursPerDay>
+        <hoursPerDay employee="100258">1</hoursPerDay>
+        <hoursPerDay employee="100263">4</hoursPerDay>
+        <hoursPerDay employee="100265">2</hoursPerDay>
+        <hoursPerDay employee="100267">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100655">
+      <title>Virtual workplaces - WBH-05</title>
+      <startDate>2015-05-11</startDate>
+      <endDate>2015-07-23</endDate>
+      <commitments>
+        <hoursPerDay employee="100257">6</hoursPerDay>
+        <hoursPerDay employee="100258">1</hoursPerDay>
+        <hoursPerDay employee="100263">8</hoursPerDay>
+        <hoursPerDay employee="100265">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100795">
+      <title>Workspace rearrangement - MLH-05</title>
+      <startDate>2015-02-02</startDate>
+      <endDate>2015-06-26</endDate>
+      <commitments>
+        <hoursPerDay employee="100257">6</hoursPerDay>
+        <hoursPerDay employee="100258">4</hoursPerDay>
+        <hoursPerDay employee="100263">4</hoursPerDay>
+        <hoursPerDay employee="100265">7</hoursPerDay>
+        <hoursPerDay employee="100267">1</hoursPerDay>
+      </commitments>
+    </project>
+  </projects>
+  <employees>
+    <employee number="100257">
+      <name>Sharon V. BUTLER</name>
+      <hourlyWage>69</hourlyWage>
+      <managedProjects>
+        <project code="P100584"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100185"></project>
+        <project code="P100795"></project>
+        <project code="P100584"></project>
+        <project code="P100655"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100258">
+      <name>Ryan Q. CHAPMAN</name>
+      <hourlyWage>23</hourlyWage>
+      <managedProjects>
+        <project code="P100424"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100795"></project>
+        <project code="P100584"></project>
+        <project code="P100655"></project>
+        <project code="P100424"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100263">
+      <name>Helen R. TERRY</name>
+      <hourlyWage>29</hourlyWage>
+      <allocatedProjects>
+        <project code="P100795"></project>
+        <project code="P100584"></project>
+        <project code="P100655"></project>
+        <project code="P100424"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100265">
+      <name>Amy H. FULLER</name>
+      <hourlyWage>45</hourlyWage>
+      <managedProjects>
+        <project code="P100185"></project>
+        <project code="P100655"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100185"></project>
+        <project code="P100795"></project>
+        <project code="P100584"></project>
+        <project code="P100655"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100267">
+      <name>Shirley X. RYAN</name>
+      <hourlyWage>48</hourlyWage>
+      <managedProjects>
+        <project code="P100795"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100795"></project>
+        <project code="P100584"></project>
+        <project code="P100424"></project>
+      </allocatedProjects>
+    </employee>
+  </employees>
+</projectPlanning>

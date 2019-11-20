@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<projectPlanning xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="pps.xsd" 
+	year="2012">
+  <projects>
+    <project code="P100670">
+      <title>Lighting replacements - WBH-00</title>
+      <startDate>2012-01-02</startDate>
+      <endDate>2012-01-11</endDate>
+      <commitments>
+        <hoursPerDay employee="100292">5</hoursPerDay>
+        <hoursPerDay employee="100298">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100752">
+      <title>Floor insulation - MLH-02</title>
+      <startDate>2012-02-10</startDate>
+      <endDate>2012-05-14</endDate>
+      <commitments>
+        <hoursPerDay employee="100292">1</hoursPerDay>
+        <hoursPerDay employee="100298">5</hoursPerDay>
+      </commitments>
+    </project>
+  </projects>
+  <employees>
+    <employee number="100292">
+      <name>Alexander C. MEYER</name>
+      <hourlyWage>42</hourlyWage>
+      <managedProjects>
+        <project code="P100752"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100670"></project>
+        <project code="P100752"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100298">
+      <name>Jerry Y. FREEMAN</name>
+      <hourlyWage>54</hourlyWage>
+      <managedProjects>
+        <project code="P100670"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100670"></project>
+        <project code="P100752"></project>
+      </allocatedProjects>
+    </employee>
+  </employees>
+</projectPlanning>

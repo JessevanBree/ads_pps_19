@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<projectPlanning xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="pps.xsd" 
+	year="2014">
+  <projects>
+    <project code="P100420">
+      <title>Toilets refurbishment - SCP-00</title>
+      <startDate>2014-06-30</startDate>
+      <endDate>2014-11-21</endDate>
+      <commitments>
+        <hoursPerDay employee="100272">5</hoursPerDay>
+        <hoursPerDay employee="100281">2</hoursPerDay>
+        <hoursPerDay employee="100280">1</hoursPerDay>
+        <hoursPerDay employee="100283">3</hoursPerDay>
+        <hoursPerDay employee="100285">8</hoursPerDay>
+      </commitments>
+    </project>
+  </projects>
+  <employees>
+    <employee number="100272">
+      <name>Larry Y. JENSEN</name>
+      <hourlyWage>44</hourlyWage>
+      <allocatedProjects>
+        <project code="P100420"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100280">
+      <name>Frank K. MASON</name>
+      <hourlyWage>73</hourlyWage>
+      <managedProjects>
+        <project code="P100420"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100420"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100281">
+      <name>Katherine F. CARLSON</name>
+      <hourlyWage>31</hourlyWage>
+      <allocatedProjects>
+        <project code="P100420"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100283">
+      <name>Samantha V. HANSEN</name>
+      <hourlyWage>21</hourlyWage>
+      <allocatedProjects>
+        <project code="P100420"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100285">
+      <name>Christine L. GREENE</name>
+      <hourlyWage>31</hourlyWage>
+      <allocatedProjects>
+        <project code="P100420"></project>
+      </allocatedProjects>
+    </employee>
+  </employees>
+</projectPlanning>

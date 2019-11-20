@@ -1,0 +1,1847 @@
+<?xml version="1.0" ?>
+<projectPlanning xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="pps.xsd" 
+	year="2019">
+  <projects>
+    <project code="P100001">
+      <title>WIFI network installation - LWB-01</title>
+      <startDate>2019-01-01</startDate>
+      <endDate>2019-03-29</endDate>
+      <commitments>
+        <hoursPerDay employee="100177">1</hoursPerDay>
+        <hoursPerDay employee="100048">1</hoursPerDay>
+        <hoursPerDay employee="100098">1</hoursPerDay>
+        <hoursPerDay employee="100116">3</hoursPerDay>
+        <hoursPerDay employee="100138">8</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100007">
+      <title>WIFI network installation - LWB-07</title>
+      <startDate>2019-05-01</startDate>
+      <endDate>2019-07-26</endDate>
+      <commitments>
+        <hoursPerDay employee="100177">1</hoursPerDay>
+        <hoursPerDay employee="100048">2</hoursPerDay>
+        <hoursPerDay employee="100227">3</hoursPerDay>
+        <hoursPerDay employee="100088">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100011">
+      <title>Surveillance cameras installation - LWB-01</title>
+      <startDate>2019-07-01</startDate>
+      <endDate>2019-10-22</endDate>
+      <commitments>
+        <hoursPerDay employee="100160">4</hoursPerDay>
+        <hoursPerDay employee="100101">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100013">
+      <title>Surveillance cameras installation - LWB-03</title>
+      <startDate>2019-05-21</startDate>
+      <endDate>2019-08-29</endDate>
+      <commitments>
+        <hoursPerDay employee="100167">2</hoursPerDay>
+        <hoursPerDay employee="100234">4</hoursPerDay>
+        <hoursPerDay employee="100060">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100022">
+      <title>Virtual workplaces - LWB-02</title>
+      <startDate>2019-04-01</startDate>
+      <endDate>2019-07-05</endDate>
+      <commitments>
+        <hoursPerDay employee="100050">7</hoursPerDay>
+        <hoursPerDay employee="100137">1</hoursPerDay>
+        <hoursPerDay employee="100124">2</hoursPerDay>
+        <hoursPerDay employee="100111">4</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100024">
+      <title>Virtual workplaces - LWB-04</title>
+      <startDate>2019-02-20</startDate>
+      <endDate>2019-07-19</endDate>
+      <commitments>
+        <hoursPerDay employee="100050">3</hoursPerDay>
+        <hoursPerDay employee="100167">2</hoursPerDay>
+        <hoursPerDay employee="100106">1</hoursPerDay>
+        <hoursPerDay employee="100060">6</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100031">
+      <title>Floor insulation - LWB-01</title>
+      <startDate>2019-01-11</startDate>
+      <endDate>2019-06-10</endDate>
+      <commitments>
+        <hoursPerDay employee="100210">1</hoursPerDay>
+        <hoursPerDay employee="100089">1</hoursPerDay>
+        <hoursPerDay employee="100159">6</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100033">
+      <title>Floor insulation - LWB-03</title>
+      <startDate>2019-01-21</startDate>
+      <endDate>2019-06-24</endDate>
+      <commitments>
+        <hoursPerDay employee="100243">2</hoursPerDay>
+        <hoursPerDay employee="100195">1</hoursPerDay>
+        <hoursPerDay employee="100138">1</hoursPerDay>
+        <hoursPerDay employee="100124">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100041">
+      <title>Lighting replacements - LWB-01</title>
+      <startDate>2019-04-01</startDate>
+      <endDate>2019-08-02</endDate>
+      <commitments>
+        <hoursPerDay employee="100085">1</hoursPerDay>
+        <hoursPerDay employee="100132">2</hoursPerDay>
+        <hoursPerDay employee="100134">1</hoursPerDay>
+        <hoursPerDay employee="100111">4</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100049">
+      <title>Lighting replacements - LWB-09</title>
+      <startDate>2019-02-11</startDate>
+      <endDate>2019-02-28</endDate>
+      <commitments>
+        <hoursPerDay employee="100089">1</hoursPerDay>
+        <hoursPerDay employee="100222">3</hoursPerDay>
+        <hoursPerDay employee="100046">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100066">
+      <title>Toilets refurbishment - LWB-06</title>
+      <startDate>2019-05-13</startDate>
+      <endDate>2019-10-01</endDate>
+      <commitments>
+        <hoursPerDay employee="100187">4</hoursPerDay>
+        <hoursPerDay employee="100222">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100072">
+      <title>Workspace rearrangement - LWB-02</title>
+      <startDate>2019-06-10</startDate>
+      <endDate>2019-07-26</endDate>
+      <commitments>
+        <hoursPerDay employee="100089">4</hoursPerDay>
+        <hoursPerDay employee="100137">2</hoursPerDay>
+        <hoursPerDay employee="100203">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100076">
+      <title>Workspace rearrangement - LWB-06</title>
+      <startDate>2019-07-01</startDate>
+      <endDate>2019-08-15</endDate>
+      <commitments>
+        <hoursPerDay employee="100177">1</hoursPerDay>
+        <hoursPerDay employee="100160">4</hoursPerDay>
+        <hoursPerDay employee="100066">1</hoursPerDay>
+        <hoursPerDay employee="100046">3</hoursPerDay>
+        <hoursPerDay employee="100062">3</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100078">
+      <title>Workspace rearrangement - LWB-08</title>
+      <startDate>2019-04-11</startDate>
+      <endDate>2019-06-24</endDate>
+      <commitments>
+        <hoursPerDay employee="100195">3</hoursPerDay>
+        <hoursPerDay employee="100169">1</hoursPerDay>
+        <hoursPerDay employee="100106">6</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100086">
+      <title>WIFI network upgrade - TTH-06</title>
+      <startDate>2019-03-04</startDate>
+      <endDate>2019-06-07</endDate>
+      <commitments>
+        <hoursPerDay employee="100048">6</hoursPerDay>
+        <hoursPerDay employee="100078">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100087">
+      <title>WIFI network upgrade - TTH-07</title>
+      <startDate>2019-06-20</startDate>
+      <endDate>2019-09-27</endDate>
+      <commitments>
+        <hoursPerDay employee="100210">1</hoursPerDay>
+        <hoursPerDay employee="100169">1</hoursPerDay>
+        <hoursPerDay employee="100203">4</hoursPerDay>
+        <hoursPerDay employee="100157">5</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100090">
+      <title>WIFI network installation - TTH-00</title>
+      <startDate>2019-06-20</startDate>
+      <endDate>2019-09-10</endDate>
+      <commitments>
+        <hoursPerDay employee="100167">1</hoursPerDay>
+        <hoursPerDay employee="100106">3</hoursPerDay>
+        <hoursPerDay employee="100124">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100097">
+      <title>WIFI network installation - TTH-07</title>
+      <startDate>2019-03-04</startDate>
+      <endDate>2019-07-12</endDate>
+      <commitments>
+        <hoursPerDay employee="100177">4</hoursPerDay>
+        <hoursPerDay employee="100101">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100102">
+      <title>Surveillance cameras installation - TTH-02</title>
+      <startDate>2019-07-10</startDate>
+      <endDate>2019-11-01</endDate>
+      <commitments>
+        <hoursPerDay employee="100177">1</hoursPerDay>
+        <hoursPerDay employee="100227">2</hoursPerDay>
+        <hoursPerDay employee="100053">8</hoursPerDay>
+        <hoursPerDay employee="100167">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100114">
+      <title>Virtual workplaces - TTH-04</title>
+      <startDate>2019-01-21</startDate>
+      <endDate>2019-03-15</endDate>
+      <commitments>
+        <hoursPerDay employee="100116">2</hoursPerDay>
+        <hoursPerDay employee="100151">1</hoursPerDay>
+        <hoursPerDay employee="100046">7</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100121">
+      <title>Floor insulation - TTH-01</title>
+      <startDate>2019-04-22</startDate>
+      <endDate>2019-08-28</endDate>
+      <commitments>
+        <hoursPerDay employee="100160">2</hoursPerDay>
+        <hoursPerDay employee="100213">1</hoursPerDay>
+        <hoursPerDay employee="100215">1</hoursPerDay>
+        <hoursPerDay employee="100089">1</hoursPerDay>
+        <hoursPerDay employee="100200">1</hoursPerDay>
+        <hoursPerDay employee="100154">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100122">
+      <title>Floor insulation - TTH-02</title>
+      <startDate>2019-03-04</startDate>
+      <endDate>2019-07-10</endDate>
+      <commitments>
+        <hoursPerDay employee="100114">1</hoursPerDay>
+        <hoursPerDay employee="100111">8</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100134">
+      <title>Lighting replacements - TTH-04</title>
+      <startDate>2019-07-01</startDate>
+      <endDate>2019-10-25</endDate>
+      <commitments>
+        <hoursPerDay employee="100050">6</hoursPerDay>
+        <hoursPerDay employee="100116">3</hoursPerDay>
+        <hoursPerDay employee="100088">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100137">
+      <title>Lighting replacements - TTH-07</title>
+      <startDate>2019-05-01</startDate>
+      <endDate>2019-10-04</endDate>
+      <commitments>
+        <hoursPerDay employee="100114">4</hoursPerDay>
+        <hoursPerDay employee="100134">4</hoursPerDay>
+        <hoursPerDay employee="100182">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100139">
+      <title>Lighting replacements - TTH-09</title>
+      <startDate>2019-07-22</startDate>
+      <endDate>2019-12-03</endDate>
+      <commitments>
+        <hoursPerDay employee="100132">1</hoursPerDay>
+        <hoursPerDay employee="100182">6</hoursPerDay>
+        <hoursPerDay employee="100088">3</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100145">
+      <title>Funiture replacements - TTH-05</title>
+      <startDate>2019-01-11</startDate>
+      <endDate>2019-04-15</endDate>
+      <commitments>
+        <hoursPerDay employee="100081">1</hoursPerDay>
+        <hoursPerDay employee="100169">2</hoursPerDay>
+        <hoursPerDay employee="100222">6</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100155">
+      <title>Toilets refurbishment - TTH-05</title>
+      <startDate>2019-05-31</startDate>
+      <endDate>2019-08-06</endDate>
+      <commitments>
+        <hoursPerDay employee="100177">7</hoursPerDay>
+        <hoursPerDay employee="100116">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100156">
+      <title>Toilets refurbishment - TTH-06</title>
+      <startDate>2019-05-31</startDate>
+      <endDate>2019-07-12</endDate>
+      <commitments>
+        <hoursPerDay employee="100098">1</hoursPerDay>
+        <hoursPerDay employee="100089">5</hoursPerDay>
+        <hoursPerDay employee="100169">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100188">
+      <title>WIFI network installation - CON-08</title>
+      <startDate>2019-02-20</startDate>
+      <endDate>2019-06-18</endDate>
+      <commitments>
+        <hoursPerDay employee="100097">1</hoursPerDay>
+        <hoursPerDay employee="100051">1</hoursPerDay>
+        <hoursPerDay employee="100213">2</hoursPerDay>
+        <hoursPerDay employee="100251">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100189">
+      <title>WIFI network installation - CON-09</title>
+      <startDate>2019-03-22</startDate>
+      <endDate>2019-05-07</endDate>
+      <commitments>
+        <hoursPerDay employee="100097">7</hoursPerDay>
+        <hoursPerDay employee="100050">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100191">
+      <title>Surveillance cameras installation - CON-01</title>
+      <startDate>2019-06-10</startDate>
+      <endDate>2019-11-08</endDate>
+      <commitments>
+        <hoursPerDay employee="100116">4</hoursPerDay>
+        <hoursPerDay employee="100187">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100201">
+      <title>Virtual workplaces - CON-01</title>
+      <startDate>2019-05-01</startDate>
+      <endDate>2019-07-05</endDate>
+      <commitments>
+        <hoursPerDay employee="100227">1</hoursPerDay>
+        <hoursPerDay employee="100210">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100205">
+      <title>Virtual workplaces - CON-05</title>
+      <startDate>2019-07-01</startDate>
+      <endDate>2019-10-18</endDate>
+      <commitments>
+        <hoursPerDay employee="100138">1</hoursPerDay>
+        <hoursPerDay employee="100060">2</hoursPerDay>
+        <hoursPerDay employee="100111">3</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100220">
+      <title>Lighting replacements - CON-00</title>
+      <startDate>2019-01-21</startDate>
+      <endDate>2019-06-03</endDate>
+      <commitments>
+        <hoursPerDay employee="100053">4</hoursPerDay>
+        <hoursPerDay employee="100088">1</hoursPerDay>
+        <hoursPerDay employee="100060">4</hoursPerDay>
+        <hoursPerDay employee="100062">5</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100221">
+      <title>Lighting replacements - CON-01</title>
+      <startDate>2019-07-22</startDate>
+      <endDate>2019-11-15</endDate>
+      <commitments>
+        <hoursPerDay employee="100097">3</hoursPerDay>
+        <hoursPerDay employee="100225">1</hoursPerDay>
+        <hoursPerDay employee="100210">3</hoursPerDay>
+        <hoursPerDay employee="100167">1</hoursPerDay>
+        <hoursPerDay employee="100078">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100226">
+      <title>Lighting replacements - CON-06</title>
+      <startDate>2019-05-21</startDate>
+      <endDate>2019-10-18</endDate>
+      <commitments>
+        <hoursPerDay employee="100200">8</hoursPerDay>
+        <hoursPerDay employee="100157">2</hoursPerDay>
+        <hoursPerDay employee="100062">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100227">
+      <title>Lighting replacements - CON-07</title>
+      <startDate>2019-07-01</startDate>
+      <endDate>2019-07-10</endDate>
+      <commitments>
+        <hoursPerDay employee="100097">1</hoursPerDay>
+        <hoursPerDay employee="100101">6</hoursPerDay>
+        <hoursPerDay employee="100046">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100244">
+      <title>Toilets refurbishment - CON-04</title>
+      <startDate>2019-04-22</startDate>
+      <endDate>2019-08-16</endDate>
+      <commitments>
+        <hoursPerDay employee="100051">2</hoursPerDay>
+        <hoursPerDay employee="100227">1</hoursPerDay>
+        <hoursPerDay employee="100134">1</hoursPerDay>
+        <hoursPerDay employee="100137">6</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100247">
+      <title>Toilets refurbishment - CON-07</title>
+      <startDate>2019-02-11</startDate>
+      <endDate>2019-03-08</endDate>
+      <commitments>
+        <hoursPerDay employee="100144">1</hoursPerDay>
+        <hoursPerDay employee="100195">3</hoursPerDay>
+        <hoursPerDay employee="100210">1</hoursPerDay>
+        <hoursPerDay employee="100213">2</hoursPerDay>
+        <hoursPerDay employee="100088">1</hoursPerDay>
+        <hoursPerDay employee="100154">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100249">
+      <title>Toilets refurbishment - CON-09</title>
+      <startDate>2019-01-31</startDate>
+      <endDate>2019-06-28</endDate>
+      <commitments>
+        <hoursPerDay employee="100051">1</hoursPerDay>
+        <hoursPerDay employee="100053">1</hoursPerDay>
+        <hoursPerDay employee="100187">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100250">
+      <title>Workspace rearrangement - CON-00</title>
+      <startDate>2019-01-21</startDate>
+      <endDate>2019-05-21</endDate>
+      <commitments>
+        <hoursPerDay employee="100210">1</hoursPerDay>
+        <hoursPerDay employee="100089">1</hoursPerDay>
+        <hoursPerDay employee="100203">1</hoursPerDay>
+        <hoursPerDay employee="100236">6</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100288">
+      <title>Surveillance cameras installation - IWO-08</title>
+      <startDate>2019-06-20</startDate>
+      <endDate>2019-11-01</endDate>
+      <commitments>
+        <hoursPerDay employee="100227">1</hoursPerDay>
+        <hoursPerDay employee="100088">4</hoursPerDay>
+        <hoursPerDay employee="100106">1</hoursPerDay>
+        <hoursPerDay employee="100078">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100298">
+      <title>Virtual workplaces - IWO-08</title>
+      <startDate>2019-05-13</startDate>
+      <endDate>2019-08-05</endDate>
+      <commitments>
+        <hoursPerDay employee="100085">4</hoursPerDay>
+        <hoursPerDay employee="100169">2</hoursPerDay>
+        <hoursPerDay employee="100089">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100301">
+      <title>Floor insulation - IWO-01</title>
+      <startDate>2019-05-01</startDate>
+      <endDate>2019-06-21</endDate>
+      <commitments>
+        <hoursPerDay employee="100157">4</hoursPerDay>
+        <hoursPerDay employee="100236">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100306">
+      <title>Floor insulation - IWO-06</title>
+      <startDate>2019-07-10</startDate>
+      <endDate>2019-10-10</endDate>
+      <commitments>
+        <hoursPerDay employee="100085">5</hoursPerDay>
+        <hoursPerDay employee="100138">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100326">
+      <title>Funiture replacements - IWO-06</title>
+      <startDate>2019-02-20</startDate>
+      <endDate>2019-05-08</endDate>
+      <commitments>
+        <hoursPerDay employee="100051">1</hoursPerDay>
+        <hoursPerDay employee="100101">2</hoursPerDay>
+        <hoursPerDay employee="100132">3</hoursPerDay>
+        <hoursPerDay employee="100157">3</hoursPerDay>
+        <hoursPerDay employee="100060">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100328">
+      <title>Funiture replacements - IWO-08</title>
+      <startDate>2019-04-22</startDate>
+      <endDate>2019-05-07</endDate>
+      <commitments>
+        <hoursPerDay employee="100081">6</hoursPerDay>
+        <hoursPerDay employee="100227">4</hoursPerDay>
+        <hoursPerDay employee="100137">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100331">
+      <title>Toilets refurbishment - IWO-01</title>
+      <startDate>2019-01-11</startDate>
+      <endDate>2019-02-11</endDate>
+      <commitments>
+        <hoursPerDay employee="100138">3</hoursPerDay>
+        <hoursPerDay employee="100159">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100336">
+      <title>Toilets refurbishment - IWO-06</title>
+      <startDate>2019-03-04</startDate>
+      <endDate>2019-05-03</endDate>
+      <commitments>
+        <hoursPerDay employee="100213">4</hoursPerDay>
+        <hoursPerDay employee="100157">1</hoursPerDay>
+        <hoursPerDay employee="100062">4</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100341">
+      <title>Workspace rearrangement - IWO-01</title>
+      <startDate>2019-04-22</startDate>
+      <endDate>2019-05-31</endDate>
+      <commitments>
+        <hoursPerDay employee="100177">5</hoursPerDay>
+        <hoursPerDay employee="100154">1</hoursPerDay>
+        <hoursPerDay employee="100111">5</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100347">
+      <title>Workspace rearrangement - IWO-07</title>
+      <startDate>2019-03-04</startDate>
+      <endDate>2019-05-29</endDate>
+      <commitments>
+        <hoursPerDay employee="100053">5</hoursPerDay>
+        <hoursPerDay employee="100215">1</hoursPerDay>
+        <hoursPerDay employee="100137">1</hoursPerDay>
+        <hoursPerDay employee="100154">5</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100366">
+      <title>WIFI network installation - SCP-06</title>
+      <startDate>2019-03-22</startDate>
+      <endDate>2019-05-03</endDate>
+      <commitments>
+        <hoursPerDay employee="100053">5</hoursPerDay>
+        <hoursPerDay employee="100071">1</hoursPerDay>
+        <hoursPerDay employee="100182">1</hoursPerDay>
+        <hoursPerDay employee="100234">4</hoursPerDay>
+        <hoursPerDay employee="100060">3</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100387">
+      <title>Virtual workplaces - SCP-07</title>
+      <startDate>2019-05-31</startDate>
+      <endDate>2019-07-05</endDate>
+      <commitments>
+        <hoursPerDay employee="100203">1</hoursPerDay>
+        <hoursPerDay employee="100124">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100390">
+      <title>Floor insulation - SCP-00</title>
+      <startDate>2019-07-22</startDate>
+      <endDate>2019-09-11</endDate>
+      <commitments>
+        <hoursPerDay employee="100195">3</hoursPerDay>
+        <hoursPerDay employee="100111">3</hoursPerDay>
+        <hoursPerDay employee="100046">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100391">
+      <title>Floor insulation - SCP-01</title>
+      <startDate>2019-04-01</startDate>
+      <endDate>2019-09-03</endDate>
+      <commitments>
+        <hoursPerDay employee="100225">2</hoursPerDay>
+        <hoursPerDay employee="100051">1</hoursPerDay>
+        <hoursPerDay employee="100053">1</hoursPerDay>
+        <hoursPerDay employee="100169">2</hoursPerDay>
+        <hoursPerDay employee="100138">1</hoursPerDay>
+        <hoursPerDay employee="100111">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100407">
+      <title>Lighting replacements - SCP-07</title>
+      <startDate>2019-07-10</startDate>
+      <endDate>2019-11-18</endDate>
+      <commitments>
+        <hoursPerDay employee="100160">3</hoursPerDay>
+        <hoursPerDay employee="100053">2</hoursPerDay>
+        <hoursPerDay employee="100116">1</hoursPerDay>
+        <hoursPerDay employee="100182">8</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100408">
+      <title>Lighting replacements - SCP-08</title>
+      <startDate>2019-01-31</startDate>
+      <endDate>2019-03-25</endDate>
+      <commitments>
+        <hoursPerDay employee="100048">2</hoursPerDay>
+        <hoursPerDay employee="100210">2</hoursPerDay>
+        <hoursPerDay employee="100151">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100422">
+      <title>Toilets refurbishment - SCP-02</title>
+      <startDate>2019-05-31</startDate>
+      <endDate>2019-10-25</endDate>
+      <commitments>
+        <hoursPerDay employee="100066">8</hoursPerDay>
+        <hoursPerDay employee="100132">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100427">
+      <title>Toilets refurbishment - SCP-07</title>
+      <startDate>2019-03-04</startDate>
+      <endDate>2019-04-09</endDate>
+      <commitments>
+        <hoursPerDay employee="100097">1</hoursPerDay>
+        <hoursPerDay employee="100066">1</hoursPerDay>
+        <hoursPerDay employee="100111">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100428">
+      <title>Toilets refurbishment - SCP-08</title>
+      <startDate>2019-04-01</startDate>
+      <endDate>2019-05-02</endDate>
+      <commitments>
+        <hoursPerDay employee="100177">3</hoursPerDay>
+        <hoursPerDay employee="100046">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100443">
+      <title>WIFI network upgrade - KSH-03</title>
+      <startDate>2019-06-10</startDate>
+      <endDate>2019-07-19</endDate>
+      <commitments>
+        <hoursPerDay employee="100210">2</hoursPerDay>
+        <hoursPerDay employee="100060">1</hoursPerDay>
+        <hoursPerDay employee="100046">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100459">
+      <title>WIFI network installation - KSH-09</title>
+      <startDate>2019-05-13</startDate>
+      <endDate>2019-09-25</endDate>
+      <commitments>
+        <hoursPerDay employee="100134">1</hoursPerDay>
+        <hoursPerDay employee="100187">1</hoursPerDay>
+        <hoursPerDay employee="100106">1</hoursPerDay>
+        <hoursPerDay employee="100222">3</hoursPerDay>
+        <hoursPerDay employee="100046">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100461">
+      <title>Surveillance cameras installation - KSH-01</title>
+      <startDate>2019-03-22</startDate>
+      <endDate>2019-07-22</endDate>
+      <commitments>
+        <hoursPerDay employee="100101">3</hoursPerDay>
+        <hoursPerDay employee="100215">1</hoursPerDay>
+        <hoursPerDay employee="100187">1</hoursPerDay>
+        <hoursPerDay employee="100078">6</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100463">
+      <title>Surveillance cameras installation - KSH-03</title>
+      <startDate>2019-01-31</startDate>
+      <endDate>2019-06-06</endDate>
+      <commitments>
+        <hoursPerDay employee="100225">1</hoursPerDay>
+        <hoursPerDay employee="100132">3</hoursPerDay>
+        <hoursPerDay employee="100106">3</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100469">
+      <title>Surveillance cameras installation - KSH-09</title>
+      <startDate>2019-07-01</startDate>
+      <endDate>2019-09-19</endDate>
+      <commitments>
+        <hoursPerDay employee="100210">2</hoursPerDay>
+        <hoursPerDay employee="100116">1</hoursPerDay>
+        <hoursPerDay employee="100187">1</hoursPerDay>
+        <hoursPerDay employee="100159">1</hoursPerDay>
+        <hoursPerDay employee="100111">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100473">
+      <title>Virtual workplaces - KSH-03</title>
+      <startDate>2019-07-01</startDate>
+      <endDate>2019-10-21</endDate>
+      <commitments>
+        <hoursPerDay employee="100144">8</hoursPerDay>
+        <hoursPerDay employee="100085">1</hoursPerDay>
+        <hoursPerDay employee="100138">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100488">
+      <title>Floor insulation - KSH-08</title>
+      <startDate>2019-05-31</startDate>
+      <endDate>2019-11-08</endDate>
+      <commitments>
+        <hoursPerDay employee="100081">1</hoursPerDay>
+        <hoursPerDay employee="100101">1</hoursPerDay>
+        <hoursPerDay employee="100053">7</hoursPerDay>
+        <hoursPerDay employee="100089">3</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100495">
+      <title>Lighting replacements - KSH-05</title>
+      <startDate>2019-03-22</startDate>
+      <endDate>2019-08-15</endDate>
+      <commitments>
+        <hoursPerDay employee="100169">2</hoursPerDay>
+        <hoursPerDay employee="100088">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100515">
+      <title>Toilets refurbishment - KSH-05</title>
+      <startDate>2019-07-10</startDate>
+      <endDate>2019-09-06</endDate>
+      <commitments>
+        <hoursPerDay employee="100048">3</hoursPerDay>
+        <hoursPerDay employee="100169">1</hoursPerDay>
+        <hoursPerDay employee="100046">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100522">
+      <title>Workspace rearrangement - KSH-02</title>
+      <startDate>2019-03-12</startDate>
+      <endDate>2019-03-18</endDate>
+      <commitments>
+        <hoursPerDay employee="100132">3</hoursPerDay>
+        <hoursPerDay employee="100167">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100554">
+      <title>Surveillance cameras installation - BPH-04</title>
+      <startDate>2019-03-04</startDate>
+      <endDate>2019-07-17</endDate>
+      <commitments>
+        <hoursPerDay employee="100071">2</hoursPerDay>
+        <hoursPerDay employee="100236">3</hoursPerDay>
+        <hoursPerDay employee="100046">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100563">
+      <title>Virtual workplaces - BPH-03</title>
+      <startDate>2019-05-21</startDate>
+      <endDate>2019-07-05</endDate>
+      <commitments>
+        <hoursPerDay employee="100167">1</hoursPerDay>
+        <hoursPerDay employee="100088">4</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100565">
+      <title>Virtual workplaces - BPH-05</title>
+      <startDate>2019-04-01</startDate>
+      <endDate>2019-05-27</endDate>
+      <commitments>
+        <hoursPerDay employee="100243">7</hoursPerDay>
+        <hoursPerDay employee="100200">1</hoursPerDay>
+        <hoursPerDay employee="100157">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100577">
+      <title>Floor insulation - BPH-07</title>
+      <startDate>2019-03-12</startDate>
+      <endDate>2019-07-12</endDate>
+      <commitments>
+        <hoursPerDay employee="100066">1</hoursPerDay>
+        <hoursPerDay employee="100085">5</hoursPerDay>
+        <hoursPerDay employee="100053">1</hoursPerDay>
+        <hoursPerDay employee="100251">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100584">
+      <title>Lighting replacements - BPH-04</title>
+      <startDate>2019-05-31</startDate>
+      <endDate>2019-06-28</endDate>
+      <commitments>
+        <hoursPerDay employee="100169">7</hoursPerDay>
+        <hoursPerDay employee="100060">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100607">
+      <title>Toilets refurbishment - BPH-07</title>
+      <startDate>2019-04-11</startDate>
+      <endDate>2019-04-24</endDate>
+      <commitments>
+        <hoursPerDay employee="100081">1</hoursPerDay>
+        <hoursPerDay employee="100160">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100608">
+      <title>Toilets refurbishment - BPH-08</title>
+      <startDate>2019-05-13</startDate>
+      <endDate>2019-08-21</endDate>
+      <commitments>
+        <hoursPerDay employee="100062">4</hoursPerDay>
+        <hoursPerDay employee="100046">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100609">
+      <title>Toilets refurbishment - BPH-09</title>
+      <startDate>2019-05-13</startDate>
+      <endDate>2019-10-11</endDate>
+      <commitments>
+        <hoursPerDay employee="100051">5</hoursPerDay>
+        <hoursPerDay employee="100243">1</hoursPerDay>
+        <hoursPerDay employee="100187">3</hoursPerDay>
+        <hoursPerDay employee="100154">4</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100614">
+      <title>Workspace rearrangement - BPH-04</title>
+      <startDate>2019-02-20</startDate>
+      <endDate>2019-03-06</endDate>
+      <commitments>
+        <hoursPerDay employee="100144">1</hoursPerDay>
+        <hoursPerDay employee="100138">4</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100621">
+      <title>WIFI network upgrade - WBH-01</title>
+      <startDate>2019-06-10</startDate>
+      <endDate>2019-07-08</endDate>
+      <commitments>
+        <hoursPerDay employee="100210">5</hoursPerDay>
+        <hoursPerDay employee="100050">1</hoursPerDay>
+        <hoursPerDay employee="100089">3</hoursPerDay>
+        <hoursPerDay employee="100251">3</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100628">
+      <title>WIFI network upgrade - WBH-08</title>
+      <startDate>2019-06-10</startDate>
+      <endDate>2019-07-11</endDate>
+      <commitments>
+        <hoursPerDay employee="100114">1</hoursPerDay>
+        <hoursPerDay employee="100213">5</hoursPerDay>
+        <hoursPerDay employee="100132">1</hoursPerDay>
+        <hoursPerDay employee="100060">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100629">
+      <title>WIFI network upgrade - WBH-09</title>
+      <startDate>2019-07-10</startDate>
+      <endDate>2019-08-20</endDate>
+      <commitments>
+        <hoursPerDay employee="100177">1</hoursPerDay>
+        <hoursPerDay employee="100048">7</hoursPerDay>
+        <hoursPerDay employee="100234">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100630">
+      <title>WIFI network installation - WBH-00</title>
+      <startDate>2019-01-31</startDate>
+      <endDate>2019-04-19</endDate>
+      <commitments>
+        <hoursPerDay employee="100050">3</hoursPerDay>
+        <hoursPerDay employee="100116">3</hoursPerDay>
+        <hoursPerDay employee="100251">1</hoursPerDay>
+        <hoursPerDay employee="100138">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100639">
+      <title>WIFI network installation - WBH-09</title>
+      <startDate>2019-06-10</startDate>
+      <endDate>2019-09-16</endDate>
+      <commitments>
+        <hoursPerDay employee="100098">5</hoursPerDay>
+        <hoursPerDay employee="100213">7</hoursPerDay>
+        <hoursPerDay employee="100046">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100648">
+      <title>Surveillance cameras installation - WBH-08</title>
+      <startDate>2019-01-01</startDate>
+      <endDate>2019-04-11</endDate>
+      <commitments>
+        <hoursPerDay employee="100098">8</hoursPerDay>
+        <hoursPerDay employee="100066">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100656">
+      <title>Virtual workplaces - WBH-06</title>
+      <startDate>2019-07-01</startDate>
+      <endDate>2019-07-23</endDate>
+      <commitments>
+        <hoursPerDay employee="100051">4</hoursPerDay>
+        <hoursPerDay employee="100236">1</hoursPerDay>
+        <hoursPerDay employee="100046">6</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100671">
+      <title>Lighting replacements - WBH-01</title>
+      <startDate>2019-01-31</startDate>
+      <endDate>2019-06-14</endDate>
+      <commitments>
+        <hoursPerDay employee="100101">1</hoursPerDay>
+        <hoursPerDay employee="100167">1</hoursPerDay>
+        <hoursPerDay employee="100137">6</hoursPerDay>
+        <hoursPerDay employee="100251">2</hoursPerDay>
+        <hoursPerDay employee="100111">2</hoursPerDay>
+        <hoursPerDay employee="100046">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100678">
+      <title>Lighting replacements - WBH-08</title>
+      <startDate>2019-01-21</startDate>
+      <endDate>2019-02-22</endDate>
+      <commitments>
+        <hoursPerDay employee="100053">5</hoursPerDay>
+        <hoursPerDay employee="100251">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100683">
+      <title>Funiture replacements - WBH-03</title>
+      <startDate>2019-06-10</startDate>
+      <endDate>2019-10-25</endDate>
+      <commitments>
+        <hoursPerDay employee="100101">8</hoursPerDay>
+        <hoursPerDay employee="100085">1</hoursPerDay>
+        <hoursPerDay employee="100154">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100685">
+      <title>Funiture replacements - WBH-05</title>
+      <startDate>2019-01-11</startDate>
+      <endDate>2019-04-05</endDate>
+      <commitments>
+        <hoursPerDay employee="100225">1</hoursPerDay>
+        <hoursPerDay employee="100138">6</hoursPerDay>
+        <hoursPerDay employee="100062">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100710">
+      <title>WIFI network upgrade - MLH-00</title>
+      <startDate>2019-07-01</startDate>
+      <endDate>2019-09-16</endDate>
+      <commitments>
+        <hoursPerDay employee="100116">1</hoursPerDay>
+        <hoursPerDay employee="100154">4</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100716">
+      <title>WIFI network upgrade - MLH-06</title>
+      <startDate>2019-05-21</startDate>
+      <endDate>2019-07-04</endDate>
+      <commitments>
+        <hoursPerDay employee="100195">1</hoursPerDay>
+        <hoursPerDay employee="100187">8</hoursPerDay>
+        <hoursPerDay employee="100203">4</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100733">
+      <title>Surveillance cameras installation - MLH-03</title>
+      <startDate>2019-05-31</startDate>
+      <endDate>2019-09-06</endDate>
+      <commitments>
+        <hoursPerDay employee="100243">1</hoursPerDay>
+        <hoursPerDay employee="100227">4</hoursPerDay>
+        <hoursPerDay employee="100182">1</hoursPerDay>
+        <hoursPerDay employee="100203">3</hoursPerDay>
+        <hoursPerDay employee="100159">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100736">
+      <title>Surveillance cameras installation - MLH-06</title>
+      <startDate>2019-06-10</startDate>
+      <endDate>2019-08-14</endDate>
+      <commitments>
+        <hoursPerDay employee="100144">1</hoursPerDay>
+        <hoursPerDay employee="100215">2</hoursPerDay>
+        <hoursPerDay employee="100151">1</hoursPerDay>
+        <hoursPerDay employee="100154">6</hoursPerDay>
+        <hoursPerDay employee="100046">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100737">
+      <title>Surveillance cameras installation - MLH-07</title>
+      <startDate>2019-07-22</startDate>
+      <endDate>2019-08-22</endDate>
+      <commitments>
+        <hoursPerDay employee="100124">1</hoursPerDay>
+        <hoursPerDay employee="100159">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100744">
+      <title>Virtual workplaces - MLH-04</title>
+      <startDate>2019-06-10</startDate>
+      <endDate>2019-08-15</endDate>
+      <commitments>
+        <hoursPerDay employee="100048">1</hoursPerDay>
+        <hoursPerDay employee="100151">8</hoursPerDay>
+        <hoursPerDay employee="100157">2</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100748">
+      <title>Virtual workplaces - MLH-08</title>
+      <startDate>2019-01-31</startDate>
+      <endDate>2019-07-12</endDate>
+      <commitments>
+        <hoursPerDay employee="100097">1</hoursPerDay>
+        <hoursPerDay employee="100101">4</hoursPerDay>
+        <hoursPerDay employee="100078">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100773">
+      <title>Funiture replacements - MLH-03</title>
+      <startDate>2019-05-31</startDate>
+      <endDate>2019-08-23</endDate>
+      <commitments>
+        <hoursPerDay employee="100114">1</hoursPerDay>
+        <hoursPerDay employee="100234">4</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100781">
+      <title>Toilets refurbishment - MLH-01</title>
+      <startDate>2019-07-01</startDate>
+      <endDate>2019-07-19</endDate>
+      <commitments>
+        <hoursPerDay employee="100195">3</hoursPerDay>
+        <hoursPerDay employee="100053">5</hoursPerDay>
+        <hoursPerDay employee="100078">1</hoursPerDay>
+      </commitments>
+    </project>
+    <project code="P100785">
+      <title>Toilets refurbishment - MLH-05</title>
+      <startDate>2019-03-04</startDate>
+      <endDate>2019-05-07</endDate>
+      <commitments>
+        <hoursPerDay employee="100151">6</hoursPerDay>
+        <hoursPerDay employee="100089">1</hoursPerDay>
+        <hoursPerDay employee="100187">4</hoursPerDay>
+        <hoursPerDay employee="100157">1</hoursPerDay>
+      </commitments>
+    </project>
+  </projects>
+  <employees>
+    <employee number="100046">
+      <name>Brian K. LEE</name>
+      <hourlyWage>52</hourlyWage>
+      <managedProjects>
+        <project code="P100639"></project>
+        <project code="P100515"></project>
+        <project code="P100428"></project>
+        <project code="P100390"></project>
+        <project code="P100608"></project>
+        <project code="P100554"></project>
+        <project code="P100443"></project>
+        <project code="P100049"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100390"></project>
+        <project code="P100671"></project>
+        <project code="P100076"></project>
+        <project code="P100639"></project>
+        <project code="P100736"></project>
+        <project code="P100515"></project>
+        <project code="P100428"></project>
+        <project code="P100608"></project>
+        <project code="P100554"></project>
+        <project code="P100443"></project>
+        <project code="P100114"></project>
+        <project code="P100227"></project>
+        <project code="P100459"></project>
+        <project code="P100656"></project>
+        <project code="P100049"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100048">
+      <name>Edward A. VARGAS</name>
+      <hourlyWage>61</hourlyWage>
+      <managedProjects>
+        <project code="P100744"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100408"></project>
+        <project code="P100515"></project>
+        <project code="P100086"></project>
+        <project code="P100629"></project>
+        <project code="P100001"></project>
+        <project code="P100007"></project>
+        <project code="P100744"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100050">
+      <name>Ronald Q. NGUYEN</name>
+      <hourlyWage>62</hourlyWage>
+      <managedProjects>
+        <project code="P100189"></project>
+        <project code="P100621"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100022"></project>
+        <project code="P100630"></project>
+        <project code="P100024"></project>
+        <project code="P100189"></project>
+        <project code="P100134"></project>
+        <project code="P100621"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100051">
+      <name>Stephanie L. ROSS</name>
+      <hourlyWage>41</hourlyWage>
+      <managedProjects>
+        <project code="P100188"></project>
+        <project code="P100249"></project>
+        <project code="P100326"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100391"></project>
+        <project code="P100609"></project>
+        <project code="P100188"></project>
+        <project code="P100244"></project>
+        <project code="P100249"></project>
+        <project code="P100326"></project>
+        <project code="P100656"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100053">
+      <name>Rebecca B. EDWARDS</name>
+      <hourlyWage>59</hourlyWage>
+      <managedProjects>
+        <project code="P100577"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100391"></project>
+        <project code="P100407"></project>
+        <project code="P100781"></project>
+        <project code="P100220"></project>
+        <project code="P100366"></project>
+        <project code="P100102"></project>
+        <project code="P100488"></project>
+        <project code="P100249"></project>
+        <project code="P100678"></project>
+        <project code="P100577"></project>
+        <project code="P100347"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100060">
+      <name>Jacob S. KELLY</name>
+      <hourlyWage>37</hourlyWage>
+      <managedProjects>
+        <project code="P100584"></project>
+        <project code="P100013"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100628"></project>
+        <project code="P100220"></project>
+        <project code="P100366"></project>
+        <project code="P100443"></project>
+        <project code="P100584"></project>
+        <project code="P100024"></project>
+        <project code="P100013"></project>
+        <project code="P100205"></project>
+        <project code="P100326"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100062">
+      <name>Gary I. ROBERTS</name>
+      <hourlyWage>58</hourlyWage>
+      <managedProjects>
+        <project code="P100685"></project>
+        <project code="P100226"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100076"></project>
+        <project code="P100220"></project>
+        <project code="P100608"></project>
+        <project code="P100685"></project>
+        <project code="P100226"></project>
+        <project code="P100336"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100066">
+      <name>Eric O. BOWMAN</name>
+      <hourlyWage>74</hourlyWage>
+      <managedProjects>
+        <project code="P100648"></project>
+        <project code="P100427"></project>
+        <project code="P100076"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100648"></project>
+        <project code="P100427"></project>
+        <project code="P100076"></project>
+        <project code="P100422"></project>
+        <project code="P100577"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100071">
+      <name>Anna P. BAKER</name>
+      <hourlyWage>28</hourlyWage>
+      <allocatedProjects>
+        <project code="P100366"></project>
+        <project code="P100554"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100078">
+      <name>Brandon G. COOPER</name>
+      <hourlyWage>60</hourlyWage>
+      <managedProjects>
+        <project code="P100781"></project>
+        <project code="P100086"></project>
+        <project code="P100221"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100748"></project>
+        <project code="P100781"></project>
+        <project code="P100461"></project>
+        <project code="P100086"></project>
+        <project code="P100221"></project>
+        <project code="P100288"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100081">
+      <name>Katherine R. BLACK</name>
+      <hourlyWage>53</hourlyWage>
+      <managedProjects>
+        <project code="P100607"></project>
+        <project code="P100488"></project>
+        <project code="P100145"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100328"></project>
+        <project code="P100607"></project>
+        <project code="P100488"></project>
+        <project code="P100145"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100085">
+      <name>Christine X. PATTERSON</name>
+      <hourlyWage>17</hourlyWage>
+      <managedProjects>
+        <project code="P100041"></project>
+        <project code="P100683"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100306"></project>
+        <project code="P100473"></project>
+        <project code="P100041"></project>
+        <project code="P100298"></project>
+        <project code="P100683"></project>
+        <project code="P100577"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100088">
+      <name>Raymond I. WATKINS</name>
+      <hourlyWage>35</hourlyWage>
+      <managedProjects>
+        <project code="P100495"></project>
+        <project code="P100220"></project>
+        <project code="P100134"></project>
+        <project code="P100247"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100495"></project>
+        <project code="P100220"></project>
+        <project code="P100563"></project>
+        <project code="P100288"></project>
+        <project code="P100134"></project>
+        <project code="P100007"></project>
+        <project code="P100139"></project>
+        <project code="P100247"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100089">
+      <name>Catherine D. WALKER</name>
+      <hourlyWage>25</hourlyWage>
+      <managedProjects>
+        <project code="P100031"></project>
+        <project code="P100785"></project>
+        <project code="P100298"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100072"></project>
+        <project code="P100121"></project>
+        <project code="P100250"></project>
+        <project code="P100031"></project>
+        <project code="P100785"></project>
+        <project code="P100488"></project>
+        <project code="P100298"></project>
+        <project code="P100156"></project>
+        <project code="P100049"></project>
+        <project code="P100621"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100097">
+      <name>Carolyn P. BERRY</name>
+      <hourlyWage>70</hourlyWage>
+      <managedProjects>
+        <project code="P100748"></project>
+        <project code="P100227"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100748"></project>
+        <project code="P100427"></project>
+        <project code="P100221"></project>
+        <project code="P100188"></project>
+        <project code="P100189"></project>
+        <project code="P100227"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100098">
+      <name>Jerry K. MARTINEZ</name>
+      <hourlyWage>69</hourlyWage>
+      <managedProjects>
+        <project code="P100001"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100639"></project>
+        <project code="P100648"></project>
+        <project code="P100001"></project>
+        <project code="P100156"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100101">
+      <name>Maria V. WALLACE</name>
+      <hourlyWage>54</hourlyWage>
+      <managedProjects>
+        <project code="P100011"></project>
+        <project code="P100097"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100748"></project>
+        <project code="P100461"></project>
+        <project code="P100671"></project>
+        <project code="P100011"></project>
+        <project code="P100097"></project>
+        <project code="P100488"></project>
+        <project code="P100683"></project>
+        <project code="P100227"></project>
+        <project code="P100326"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100106">
+      <name>Henry W. HUDSON</name>
+      <hourlyWage>52</hourlyWage>
+      <managedProjects>
+        <project code="P100024"></project>
+        <project code="P100288"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100078"></project>
+        <project code="P100463"></project>
+        <project code="P100024"></project>
+        <project code="P100288"></project>
+        <project code="P100090"></project>
+        <project code="P100459"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100111">
+      <name>Victoria X. MCCOY</name>
+      <hourlyWage>50</hourlyWage>
+      <allocatedProjects>
+        <project code="P100391"></project>
+        <project code="P100427"></project>
+        <project code="P100390"></project>
+        <project code="P100671"></project>
+        <project code="P100022"></project>
+        <project code="P100341"></project>
+        <project code="P100041"></project>
+        <project code="P100122"></project>
+        <project code="P100205"></project>
+        <project code="P100469"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100114">
+      <name>Nathan I. GONZALEZ</name>
+      <hourlyWage>58</hourlyWage>
+      <managedProjects>
+        <project code="P100628"></project>
+        <project code="P100773"></project>
+        <project code="P100122"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100628"></project>
+        <project code="P100773"></project>
+        <project code="P100122"></project>
+        <project code="P100137"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100116">
+      <name>Zachary Y. MILLER</name>
+      <hourlyWage>26</hourlyWage>
+      <managedProjects>
+        <project code="P100407"></project>
+        <project code="P100155"></project>
+        <project code="P100710"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100407"></project>
+        <project code="P100191"></project>
+        <project code="P100114"></project>
+        <project code="P100630"></project>
+        <project code="P100001"></project>
+        <project code="P100155"></project>
+        <project code="P100134"></project>
+        <project code="P100469"></project>
+        <project code="P100710"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100124">
+      <name>Carl K. DANIELS</name>
+      <hourlyWage>44</hourlyWage>
+      <managedProjects>
+        <project code="P100737"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100737"></project>
+        <project code="P100022"></project>
+        <project code="P100033"></project>
+        <project code="P100387"></project>
+        <project code="P100090"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100132">
+      <name>Gerald W. HALL</name>
+      <hourlyWage>68</hourlyWage>
+      <managedProjects>
+        <project code="P100422"></project>
+        <project code="P100139"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100628"></project>
+        <project code="P100041"></project>
+        <project code="P100422"></project>
+        <project code="P100463"></project>
+        <project code="P100139"></project>
+        <project code="P100326"></project>
+        <project code="P100522"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100134">
+      <name>Ethan M. DAVIDSON</name>
+      <hourlyWage>17</hourlyWage>
+      <managedProjects>
+        <project code="P100244"></project>
+        <project code="P100459"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100041"></project>
+        <project code="P100244"></project>
+        <project code="P100459"></project>
+        <project code="P100137"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100137">
+      <name>Hannah X. COLEMAN</name>
+      <hourlyWage>71</hourlyWage>
+      <managedProjects>
+        <project code="P100328"></project>
+        <project code="P100022"></project>
+        <project code="P100347"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100072"></project>
+        <project code="P100328"></project>
+        <project code="P100671"></project>
+        <project code="P100022"></project>
+        <project code="P100244"></project>
+        <project code="P100347"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100138">
+      <name>Terry S. LAWSON</name>
+      <hourlyWage>73</hourlyWage>
+      <managedProjects>
+        <project code="P100391"></project>
+        <project code="P100306"></project>
+        <project code="P100033"></project>
+        <project code="P100473"></project>
+        <project code="P100630"></project>
+        <project code="P100205"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100391"></project>
+        <project code="P100306"></project>
+        <project code="P100614"></project>
+        <project code="P100033"></project>
+        <project code="P100473"></project>
+        <project code="P100630"></project>
+        <project code="P100685"></project>
+        <project code="P100001"></project>
+        <project code="P100331"></project>
+        <project code="P100205"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100144">
+      <name>Lawrence O. WOODS</name>
+      <hourlyWage>32</hourlyWage>
+      <managedProjects>
+        <project code="P100736"></project>
+        <project code="P100614"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100736"></project>
+        <project code="P100614"></project>
+        <project code="P100473"></project>
+        <project code="P100247"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100151">
+      <name>Teresa F. CRAWFORD</name>
+      <hourlyWage>39</hourlyWage>
+      <managedProjects>
+        <project code="P100408"></project>
+        <project code="P100114"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100408"></project>
+        <project code="P100736"></project>
+        <project code="P100785"></project>
+        <project code="P100114"></project>
+        <project code="P100744"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100154">
+      <name>Albert Q. HOWELL</name>
+      <hourlyWage>58</hourlyWage>
+      <managedProjects>
+        <project code="P100341"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100736"></project>
+        <project code="P100121"></project>
+        <project code="P100341"></project>
+        <project code="P100609"></project>
+        <project code="P100683"></project>
+        <project code="P100710"></project>
+        <project code="P100247"></project>
+        <project code="P100347"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100157">
+      <name>Janice B. NELSON</name>
+      <hourlyWage>16</hourlyWage>
+      <managedProjects>
+        <project code="P100565"></project>
+        <project code="P100336"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100087"></project>
+        <project code="P100565"></project>
+        <project code="P100785"></project>
+        <project code="P100301"></project>
+        <project code="P100326"></project>
+        <project code="P100744"></project>
+        <project code="P100226"></project>
+        <project code="P100336"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100159">
+      <name>Julia R. WILSON</name>
+      <hourlyWage>69</hourlyWage>
+      <managedProjects>
+        <project code="P100331"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100737"></project>
+        <project code="P100031"></project>
+        <project code="P100331"></project>
+        <project code="P100469"></project>
+        <project code="P100733"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100160">
+      <name>Bruce M. SIMPSON</name>
+      <hourlyWage>27</hourlyWage>
+      <allocatedProjects>
+        <project code="P100407"></project>
+        <project code="P100076"></project>
+        <project code="P100121"></project>
+        <project code="P100011"></project>
+        <project code="P100607"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100167">
+      <name>Judy D. PALMER</name>
+      <hourlyWage>40</hourlyWage>
+      <managedProjects>
+        <project code="P100671"></project>
+        <project code="P100102"></project>
+        <project code="P100563"></project>
+        <project code="P100090"></project>
+        <project code="P100522"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100671"></project>
+        <project code="P100102"></project>
+        <project code="P100563"></project>
+        <project code="P100221"></project>
+        <project code="P100024"></project>
+        <project code="P100013"></project>
+        <project code="P100090"></project>
+        <project code="P100522"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100169">
+      <name>Theresa T. ORTIZ</name>
+      <hourlyWage>27</hourlyWage>
+      <managedProjects>
+        <project code="P100087"></project>
+        <project code="P100078"></project>
+        <project code="P100156"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100391"></project>
+        <project code="P100515"></project>
+        <project code="P100087"></project>
+        <project code="P100495"></project>
+        <project code="P100078"></project>
+        <project code="P100298"></project>
+        <project code="P100584"></project>
+        <project code="P100156"></project>
+        <project code="P100145"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100177">
+      <name>Amber F. HOPKINS</name>
+      <hourlyWage>21</hourlyWage>
+      <managedProjects>
+        <project code="P100629"></project>
+        <project code="P100007"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100428"></project>
+        <project code="P100076"></project>
+        <project code="P100341"></project>
+        <project code="P100097"></project>
+        <project code="P100629"></project>
+        <project code="P100102"></project>
+        <project code="P100001"></project>
+        <project code="P100155"></project>
+        <project code="P100007"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100182">
+      <name>Logan G. SANCHEZ</name>
+      <hourlyWage>26</hourlyWage>
+      <managedProjects>
+        <project code="P100366"></project>
+        <project code="P100733"></project>
+        <project code="P100137"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100407"></project>
+        <project code="P100366"></project>
+        <project code="P100139"></project>
+        <project code="P100733"></project>
+        <project code="P100137"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100187">
+      <name>Diana H. COLE</name>
+      <hourlyWage>49</hourlyWage>
+      <managedProjects>
+        <project code="P100191"></project>
+        <project code="P100461"></project>
+        <project code="P100469"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100716"></project>
+        <project code="P100191"></project>
+        <project code="P100461"></project>
+        <project code="P100066"></project>
+        <project code="P100609"></project>
+        <project code="P100785"></project>
+        <project code="P100249"></project>
+        <project code="P100469"></project>
+        <project code="P100459"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100195">
+      <name>Lori T. BREWER</name>
+      <hourlyWage>64</hourlyWage>
+      <managedProjects>
+        <project code="P100716"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100716"></project>
+        <project code="P100390"></project>
+        <project code="P100781"></project>
+        <project code="P100033"></project>
+        <project code="P100078"></project>
+        <project code="P100247"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100200">
+      <name>James U. CARTER</name>
+      <hourlyWage>29</hourlyWage>
+      <allocatedProjects>
+        <project code="P100121"></project>
+        <project code="P100565"></project>
+        <project code="P100226"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100203">
+      <name>Patricia F. STEVENS</name>
+      <hourlyWage>31</hourlyWage>
+      <managedProjects>
+        <project code="P100072"></project>
+        <project code="P100387"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100716"></project>
+        <project code="P100072"></project>
+        <project code="P100087"></project>
+        <project code="P100250"></project>
+        <project code="P100387"></project>
+        <project code="P100733"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100210">
+      <name>David W. MILLS</name>
+      <hourlyWage>71</hourlyWage>
+      <managedProjects>
+        <project code="P100250"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100408"></project>
+        <project code="P100087"></project>
+        <project code="P100250"></project>
+        <project code="P100031"></project>
+        <project code="P100201"></project>
+        <project code="P100443"></project>
+        <project code="P100221"></project>
+        <project code="P100469"></project>
+        <project code="P100247"></project>
+        <project code="P100621"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100213">
+      <name>Susan H. ROMERO</name>
+      <hourlyWage>31</hourlyWage>
+      <allocatedProjects>
+        <project code="P100639"></project>
+        <project code="P100628"></project>
+        <project code="P100121"></project>
+        <project code="P100188"></project>
+        <project code="P100247"></project>
+        <project code="P100336"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100215">
+      <name>Jessica X. WHEELER</name>
+      <hourlyWage>19</hourlyWage>
+      <managedProjects>
+        <project code="P100121"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100736"></project>
+        <project code="P100461"></project>
+        <project code="P100121"></project>
+        <project code="P100347"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100222">
+      <name>Daniel O. KIM</name>
+      <hourlyWage>45</hourlyWage>
+      <managedProjects>
+        <project code="P100066"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100066"></project>
+        <project code="P100145"></project>
+        <project code="P100459"></project>
+        <project code="P100049"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100225">
+      <name>Lisa Z. MORRIS</name>
+      <hourlyWage>27</hourlyWage>
+      <managedProjects>
+        <project code="P100463"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100391"></project>
+        <project code="P100685"></project>
+        <project code="P100463"></project>
+        <project code="P100221"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100227">
+      <name>Betty P. RODRIGUEZ</name>
+      <hourlyWage>70</hourlyWage>
+      <managedProjects>
+        <project code="P100201"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100328"></project>
+        <project code="P100201"></project>
+        <project code="P100102"></project>
+        <project code="P100244"></project>
+        <project code="P100288"></project>
+        <project code="P100007"></project>
+        <project code="P100733"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100234">
+      <name>Steven G. PARKER</name>
+      <hourlyWage>73</hourlyWage>
+      <allocatedProjects>
+        <project code="P100629"></project>
+        <project code="P100366"></project>
+        <project code="P100773"></project>
+        <project code="P100013"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100236">
+      <name>Andrew W. MARTIN</name>
+      <hourlyWage>30</hourlyWage>
+      <managedProjects>
+        <project code="P100301"></project>
+        <project code="P100656"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100250"></project>
+        <project code="P100554"></project>
+        <project code="P100301"></project>
+        <project code="P100656"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100243">
+      <name>Carol N. MITCHELL</name>
+      <hourlyWage>40</hourlyWage>
+      <managedProjects>
+        <project code="P100609"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100033"></project>
+        <project code="P100609"></project>
+        <project code="P100565"></project>
+        <project code="P100733"></project>
+      </allocatedProjects>
+    </employee>
+    <employee number="100251">
+      <name>Stephanie Z. RUIZ</name>
+      <hourlyWage>42</hourlyWage>
+      <managedProjects>
+        <project code="P100678"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100671"></project>
+        <project code="P100630"></project>
+        <project code="P100188"></project>
+        <project code="P100678"></project>
+        <project code="P100577"></project>
+        <project code="P100621"></project>
+      </allocatedProjects>
+    </employee>
+  </employees>
+</projectPlanning>

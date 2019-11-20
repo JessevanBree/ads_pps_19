@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<projectPlanning xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="pps.xsd" 
+	year="2011">
+  <projects>
+    <project code="P100564">
+      <title>Virtual workplaces - BPH-04</title>
+      <startDate>2011-01-11</startDate>
+      <endDate>2011-04-08</endDate>
+      <commitments>
+        <hoursPerDay employee="100302">1</hoursPerDay>
+      </commitments>
+    </project>
+  </projects>
+  <employees>
+    <employee number="100302">
+      <name>Aaron E. RIVERA</name>
+      <hourlyWage>69</hourlyWage>
+      <managedProjects>
+        <project code="P100564"></project>
+      </managedProjects>
+      <allocatedProjects>
+        <project code="P100564"></project>
+      </allocatedProjects>
+    </employee>
+  </employees>
+</projectPlanning>
