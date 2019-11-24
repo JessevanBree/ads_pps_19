@@ -2,10 +2,9 @@ import utils.Calendar;
 import utils.XMLParser;
 
 import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamWriter;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Project implements Comparable<Project> {
     private static Random randomizer = new Random();
@@ -103,9 +102,8 @@ public class Project implements Comparable<Project> {
      * @param hoursPerDay
      */
     public void addCommitment(Employee employee, int hoursPerDay) {
-        // TODO
-
-
+        committedHoursPerDay.put(employee,
+                committedHoursPerDay.getOrDefault(employee, 0) + hoursPerDay);
         // also register this project assignment for this employee,
         // in case that had not been done before
         if(!employee.getAssignedProjects().contains(this)) employee.getAssignedProjects().add(this);
@@ -118,8 +116,12 @@ public class Project implements Comparable<Project> {
      * @return
      */
     public int calculateManpowerBudget() {
-        // TODO
-        return 0;
+        AtomicInteger budget = new AtomicInteger();
+        committedHoursPerDay.forEach((e, hours) -> {
+            budget.addAndGet(e.getHourlyWage() * hours * getNumWorkingDays());
+        });
+//        return committedHoursPerDay.values().stream().reduce(0, Integer::sum);
+        return budget.get();
     }
 
     public String getCode() {
