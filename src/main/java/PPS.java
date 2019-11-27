@@ -141,7 +141,8 @@ public class PPS {
          * @return
          */
         public Builder addEmployee(Employee employee) {
-            // TODO
+            // TODO maybe works
+            pps.employees.add(employee);
             return this;
         }
 
@@ -153,7 +154,9 @@ public class PPS {
          * @return
          */
         public Builder addProject(Project project, Employee manager) {
-            // TODO
+            // TODO maybe works
+            manager.getAssignedProjects().add(project);
+            pps.projects.add(project);
             return this;
         }
 
