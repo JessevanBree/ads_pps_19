@@ -213,9 +213,16 @@ public class PPS {
          * @return
          */
         public Builder addProject(Project project, Employee manager) {
-//            Employee usableManager = pps.employees.stream().filter().get();
-            manager.getAssignedProjects().add(project);
-            if (!pps.employees.contains(manager)) addEmployee(manager);
+            // Check if manager code is already present
+            Employee uniqueManager = manager;
+            for (Employee m: pps.employees) {
+                if(m.getNumber() == manager.getNumber()){
+                    uniqueManager = m;
+                };
+            }
+            if (!pps.employees.contains(uniqueManager)) addEmployee(uniqueManager);
+            uniqueManager.getManagedProjects().add(project);
+
             pps.projects.add(project);
             return this;
         }
