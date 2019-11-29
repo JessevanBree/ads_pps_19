@@ -88,6 +88,8 @@ public class PPS {
         // TODO calculate and display statistics
         System.out.println(calculateMostInvolvedEmployees().toString());
         System.out.println(calculateManagedBudgetOverview((e) -> e.getHourlyWage() <= 30).toString());
+        System.out.println(calculateAverageHourlyWage());
+        System.out.println(calculateLongestProject());
     }
 
     /**
@@ -96,8 +98,7 @@ public class PPS {
      * @return
      */
     public double calculateAverageHourlyWage() {
-        // TODO
-        return 0.0;
+        return employees.stream().mapToDouble(Employee::getHourlyWage).average().orElse(0.0);
     }
 
     /**
@@ -107,8 +108,7 @@ public class PPS {
      * @return
      */
     public Project calculateLongestProject() {
-        // TODO
-        return null;
+        return projects.stream().max(Comparator.comparing(Project::getNumWorkingDays)).orElse(null);
     }
 
     /**
@@ -239,7 +239,6 @@ public class PPS {
          * @return
          */
         public Builder addCommitment(String projectCode, int employeeNr, int hoursPerDay) {
-            // TODO
             Project project = null;
             Employee employee = null;
 
