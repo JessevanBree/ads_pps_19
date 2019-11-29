@@ -7,6 +7,7 @@ import javax.xml.stream.XMLStreamConstants;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Predicate;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -212,6 +213,7 @@ public class PPS {
          * @return
          */
         public Builder addProject(Project project, Employee manager) {
+//            Employee usableManager = pps.employees.stream().filter().get();
             manager.getAssignedProjects().add(project);
             if (!pps.employees.contains(manager)) addEmployee(manager);
             pps.projects.add(project);
