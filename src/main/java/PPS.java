@@ -86,7 +86,7 @@ public class PPS {
 
         // TODO calculate and display statistics
         System.out.println(calculateMostInvolvedEmployees().toString());
-
+        System.out.println(calculateManagedBudgetOverview((e) -> e.getHourlyWage() <= 30).toString());
     }
 
     /**
@@ -154,7 +154,8 @@ public class PPS {
      */
     public Map<Employee, Integer> calculateManagedBudgetOverview(Predicate<Employee> filter) {
         // TODO J
-        return null;
+        return employees.stream().filter((employee) -> filter.test(employee))
+                .collect(HashMap::new, (m, e) -> m.put(e, e.calculateManagedBudget()), HashMap::putAll);
     }
 
     /**
