@@ -230,6 +230,21 @@ public class PPS {
          */
         public Builder addCommitment(String projectCode, int employeeNr, int hoursPerDay) {
             // TODO
+            Project project = null;
+            Employee employee = null;
+
+            for (Project p : pps.projects) {
+                if (p.getCode().equals(projectCode)) project = p;
+            }
+
+            for (Employee e : pps.employees) {
+                if (e.getNumber() == employeeNr) employee = e;
+            }
+
+            if (project != null && employee != null) {
+                project.addCommitment(employee, hoursPerDay);
+            }
+
             return this;
         }
 
