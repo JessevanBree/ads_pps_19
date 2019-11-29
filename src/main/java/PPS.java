@@ -120,8 +120,7 @@ public class PPS {
      * @return
      */
     public int calculateTotalManpowerBudget() {
-        // TODO
-        return 0;
+        return employees.stream().mapToInt(Employee::calculateManagedBudget).sum();
     }
 
     /**
