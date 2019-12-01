@@ -84,7 +84,7 @@ public class PPS {
         System.out.printf("3. The following employees have the broadest assignment in no less than %d different projects:\n%s\n", 10, calculateMostInvolvedEmployees().toString());
         System.out.printf("4. The total budget of committed project manpower is %d\n", calculateTotalManpowerBudget());
         System.out.printf("5. Below is an overview of total managed budget by junior employees (hourly wage <= 30):\n%s\n", calculateManagedBudgetOverview(e -> e.getHourlyWage() <= 30).toString());
-        System.out.printf("6. Below is an overview of cumulative monthly project spends:\n%s", calculateCumulativeMonthlySpends().toString());
+        System.out.printf("6. Below is an overview of cumulative monthly project spends:\n%s", calculateCumulativeMonthlySpends() == null ? "" : calculateCumulativeMonthlySpends().toString());
     }
 
     /**
