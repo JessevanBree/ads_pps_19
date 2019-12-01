@@ -68,7 +68,7 @@ public class Employee implements Comparable<Employee> {
     // make sure Employees can be printed. The format is 'name(number)'
     @Override
     public String toString() {
-        return name + "(" + number + ")";
+        return name + "(" + getNumber() + ")";
     }
 
     /**

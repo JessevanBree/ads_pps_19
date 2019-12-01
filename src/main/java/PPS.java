@@ -3,6 +3,7 @@ import utils.XMLParser;
 
 import javax.xml.stream.XMLStreamConstants;
 import java.time.Month;
+import java.time.format.TextStyle;
 import java.util.*;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
@@ -79,11 +80,12 @@ public class PPS {
         System.out.printf("%d employees have been assigned to %d projects:\n\n",
                 this.employees.size(), this.projects.size());
 
-        // TODO calculate and display statistics
-        System.out.println(calculateMostInvolvedEmployees().toString());
-        System.out.println(calculateManagedBudgetOverview((e) -> e.getHourlyWage() <= 30).toString());
-        System.out.println(calculateAverageHourlyWage());
-        System.out.println(calculateLongestProject());
+        System.out.printf("1. The average hourly wage of all employees is: %.2f \n", calculateAverageHourlyWage());
+        System.out.printf("2. The longest project is %s with %d available working days. \n", calculateLongestProject().toString(), calculateLongestProject().getNumWorkingDays());
+        System.out.printf("3. The follow employees have the broadest assignment in no less than 10 different projects: \n %s \n", calculateMostInvolvedEmployees().toString());
+        System.out.printf("4. The total budget of committed project manpower is: %d \n", calculateTotalManpowerBudget());
+        System.out.printf("5. Below is an overview of total managed budget by junior employees (hourly wage <= 30): \n %s \n", calculateManagedBudgetOverview((e) -> e.getHourlyWage() <= 30).toString());
+        System.out.printf("6. Below is an overview of cumulative monthly project spends: %s \n", calculateCumulativeMonthlySpends().toString());
     }
 
     /**
@@ -129,15 +131,15 @@ public class PPS {
     public Set<Employee> calculateMostInvolvedEmployees() {
         // 2 Versions possible
             // 1 With hardcoded limit on minimum assigned projects
-//          return employees.stream().filter(
-//          (employee) -> employee.getAssignedProjects().size()>= 10 )
-//          .collect( Collectors.toCollection( () -> new TreeSet<>( Comparator.comparing(Employee::getName) ) ) );
+          return employees.stream().filter(
+          (employee) -> employee.getAssignedProjects().size() >= 10 )
+          .collect( Collectors.toCollection( () -> new TreeSet<>( Comparator.comparing(Employee::getName) ) ) );
 
         // 2 based on the employee with the highest number of assigned projects
-        return employees.stream().filter(
-                (employee) -> employee.getAssignedProjects().size()
-                        >= employees.stream().mapToInt( (e) -> e.getAssignedProjects().size() ).max().getAsInt() )
-                .collect( Collectors.toCollection( () -> new TreeSet<>( Comparator.comparing(Employee::getName) ) ) );
+//        return employees.stream().filter(
+//                (employee) -> employee.getAssignedProjects().size()
+//                        >= employees.stream().mapToInt( (e) -> e.getAssignedProjects().size() ).max().getAsInt() )
+//                .collect( Collectors.toCollection( () -> new TreeSet<>( Comparator.comparing(Employee::getName) ) ) );
     }
 
     /**
@@ -169,8 +171,8 @@ public class PPS {
 //                        .map((mo) -> m.put(mo, p.getWorkingDays()
 //                                .stream().mapToInt(i -> i.getDayOfYear()).sum())), HashMap::putAll);
 
-//        return Arrays.stream(Month.values()).collect(HashMap::new, (map, m) -> map.put(m., ), HashMap::putAll);
-        return null;
+//        return Arrays.stream(Month.values()).collect(HashMap::new, (map, m) -> map.put(m, 0), HashMap::putAll).merge();
+        return new HashMap<>();
     }
 
     public String getName() {
