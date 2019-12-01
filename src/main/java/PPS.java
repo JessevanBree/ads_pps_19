@@ -80,12 +80,12 @@ public class PPS {
         System.out.printf("%d employees have been assigned to %d projects:\n\n",
                 this.employees.size(), this.projects.size());
 
-        System.out.printf("1. The average hourly wage of all employees is: %.2f \n", calculateAverageHourlyWage());
-        System.out.printf("2. The longest project is %s with %d available working days. \n", calculateLongestProject().toString(), calculateLongestProject().getNumWorkingDays());
-        System.out.printf("3. The follow employees have the broadest assignment in no less than 10 different projects: \n %s \n", calculateMostInvolvedEmployees().toString());
-        System.out.printf("4. The total budget of committed project manpower is: %d \n", calculateTotalManpowerBudget());
-        System.out.printf("5. Below is an overview of total managed budget by junior employees (hourly wage <= 30): \n %s \n", calculateManagedBudgetOverview((e) -> e.getHourlyWage() <= 30).toString());
-        System.out.printf("6. Below is an overview of cumulative monthly project spends: %s \n", calculateCumulativeMonthlySpends().toString());
+        System.out.printf("1. The average hourly wage of all employees is %f\n", calculateAverageHourlyWage());
+        System.out.printf("2. The longest project is '%s' with %d available working days\n", calculateLongestProject(), calculateLongestProject().getNumWorkingDays());
+        System.out.printf("3. The following employees have the broadest assignment in no less than %d different projects:\n%s\n", 10, calculateMostInvolvedEmployees().toString());
+        System.out.printf("4. The total budget of committed project manpower is %d\n", calculateTotalManpowerBudget());
+        System.out.printf("5. Below is an overview of total managed budget by junior employees (hourly wage <= 30):\n%s\n", calculateManagedBudgetOverview(e -> e.getHourlyWage() <= 30).toString());
+        System.out.printf("6. Below is an overview of cumulative monthly project spends:\n%s", calculateCumulativeMonthlySpends() == null ? "" : calculateCumulativeMonthlySpends().toString());
     }
 
     /**
