@@ -102,9 +102,8 @@ public class Project implements Comparable<Project> {
      * @param hoursPerDay
      */
     public void addCommitment(Employee employee, int hoursPerDay) {
-        committedHoursPerDay.put(employee,
-                committedHoursPerDay.getOrDefault(employee, 0) + hoursPerDay);
-
+        // Add commitment entry or sum up the old and new hours per day
+        committedHoursPerDay.merge(employee, hoursPerDay, Integer::sum);
         // also register this project assignment for this employee,
         // in case that had not been done before
         employee.getAssignedProjects().add(this);
