@@ -116,12 +116,11 @@ public class Project implements Comparable<Project> {
      * @return
      */
     public int calculateManpowerBudget() {
-        AtomicInteger budget = new AtomicInteger();
-        committedHoursPerDay.forEach((e, hours) -> {
-            budget.addAndGet(e.getHourlyWage() * hours * getNumWorkingDays());
-        });
-//        return committedHoursPerDay.values().stream().reduce(0, Integer::sum);
-        return budget.get();
+        return committedHoursPerDay.entrySet()
+                .stream()
+                .mapToInt((key) ->
+                        key.getKey().getHourlyWage() * key.getValue() * getNumWorkingDays()
+                ).sum();
     }
 
     public String getCode() {

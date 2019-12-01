@@ -45,9 +45,9 @@ public class Employee implements Comparable<Employee> {
 
     @Override
     public int compareTo(Employee o) {
-        return this.number - o.number;
+        return this.getName().compareTo(o.getName());
+//        return this.number - o.number;
     }
-
 
     //  make sure Employees can be added to a HashMap, HashSet
     //  every employee shall have a unique number
@@ -57,13 +57,12 @@ public class Employee implements Comparable<Employee> {
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
         return number == employee.number &&
-                hourlyWage == employee.hourlyWage &&
                 name.equals(employee.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(number, name, hourlyWage);
+        return Objects.hash(name, number);
     }
 
     // make sure Employees can be printed. The format is 'name(number)'

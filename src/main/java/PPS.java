@@ -1,17 +1,12 @@
-import utils.Calendar;
 import utils.SLF4J;
 import utils.XMLParser;
-import utils.XMLWriter;
 
 import javax.xml.stream.XMLStreamConstants;
-import java.time.LocalDate;
 import java.time.Month;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Predicate;
-import java.util.stream.Collector;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class PPS {
 
@@ -73,7 +68,6 @@ public class PPS {
      * Reports the statistics of the project planning year
      */
     public void printPlanningStatistics() {
-
         System.out.printf("\nProject Statistics of '%s' in the year %d\n",
                 this.name, this.planningYear);
         if (this.employees == null || this.projects == null ||
@@ -120,7 +114,9 @@ public class PPS {
      * @return
      */
     public int calculateTotalManpowerBudget() {
-        return employees.stream().mapToInt(Employee::calculateManagedBudget).sum();
+        return projects.stream()
+                .mapToInt(Project::calculateManpowerBudget)
+                .sum();
     }
 
     /**
@@ -153,9 +149,9 @@ public class PPS {
      * @return
      */
     public Map<Employee, Integer> calculateManagedBudgetOverview(Predicate<Employee> filter) {
-        // TODO J
-        return employees.stream().filter((employee) -> filter.test(employee))
-                .collect(HashMap::new, (m, e) -> m.put(e, e.calculateManagedBudget()), HashMap::putAll);
+        return employees.stream()
+                .filter(filter)
+                .collect(Collectors.toMap(e -> e,  Employee::calculateManagedBudget));
     }
 
     /**
@@ -167,6 +163,13 @@ public class PPS {
      */
     public Map<Month, Integer> calculateCumulativeMonthlySpends() {
         // TODO J
+//        LocalDate d = LocalDate.now().getMonthValue();
+//        return projects.stream().collect(HashMap::new, (m, p) ->
+//                Arrays.stream(calculateMonths(p.getStartDate(), p.getEndDate()))
+//                        .map((mo) -> m.put(mo, p.getWorkingDays()
+//                                .stream().mapToInt(i -> i.getDayOfYear()).sum())), HashMap::putAll);
+
+//        return Arrays.stream(Month.values()).collect(HashMap::new, (map, m) -> map.put(m., ), HashMap::putAll);
         return null;
     }
 
