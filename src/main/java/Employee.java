@@ -45,8 +45,7 @@ public class Employee implements Comparable<Employee> {
 
     @Override
     public int compareTo(Employee o) {
-        return this.getName().compareTo(o.getName());
-//        return this.number - o.number;
+        return this.number - o.number;
     }
 
     //  make sure Employees can be added to a HashMap, HashSet

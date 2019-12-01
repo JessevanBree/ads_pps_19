@@ -104,9 +104,10 @@ public class Project implements Comparable<Project> {
     public void addCommitment(Employee employee, int hoursPerDay) {
         committedHoursPerDay.put(employee,
                 committedHoursPerDay.getOrDefault(employee, 0) + hoursPerDay);
+
         // also register this project assignment for this employee,
         // in case that had not been done before
-        if(!employee.getAssignedProjects().contains(this)) employee.getAssignedProjects().add(this);
+        employee.getAssignedProjects().add(this);
     }
 
     /**
@@ -116,6 +117,7 @@ public class Project implements Comparable<Project> {
      * @return
      */
     public int calculateManpowerBudget() {
+        // Turns the Map into a set of Map entries that can be used with a a stream
         return committedHoursPerDay.entrySet()
                 .stream()
                 .mapToInt((key) ->

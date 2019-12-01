@@ -2,6 +2,7 @@ import utils.SLF4J;
 import utils.XMLParser;
 
 import javax.xml.stream.XMLStreamConstants;
+import java.time.LocalDate;
 import java.time.Month;
 import java.time.format.TextStyle;
 import java.util.*;
@@ -10,7 +11,7 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class PPS {
-
+    private static final int MIN_ASSIGNMENT_COUNT = 10;
     private static Random randomizer = new Random();
 
     private String name;                // the name of the planning system refers to its xml source file
@@ -80,12 +81,18 @@ public class PPS {
         System.out.printf("%d employees have been assigned to %d projects:\n\n",
                 this.employees.size(), this.projects.size());
 
-        System.out.printf("1. The average hourly wage of all employees is %f\n", calculateAverageHourlyWage());
-        System.out.printf("2. The longest project is '%s' with %d available working days\n", calculateLongestProject(), calculateLongestProject().getNumWorkingDays());
-        System.out.printf("3. The following employees have the broadest assignment in no less than %d different projects:\n%s\n", 10, calculateMostInvolvedEmployees().toString());
-        System.out.printf("4. The total budget of committed project manpower is %d\n", calculateTotalManpowerBudget());
-        System.out.printf("5. Below is an overview of total managed budget by junior employees (hourly wage <= 30):\n%s\n", calculateManagedBudgetOverview(e -> e.getHourlyWage() <= 30).toString());
-        System.out.printf("6. Below is an overview of cumulative monthly project spends:\n%s", calculateCumulativeMonthlySpends() == null ? "" : calculateCumulativeMonthlySpends().toString());
+        System.out.printf("1. The average hourly wage of all employees is %.2f\n",
+                calculateAverageHourlyWage());
+        System.out.printf("2. The longest project is '%s' with %d available working days\n",
+                calculateLongestProject(), calculateLongestProject().getNumWorkingDays());
+        System.out.printf("3. The following employees have the broadest assignment in no less than %d different projects:\n%s\n",
+                MIN_ASSIGNMENT_COUNT, calculateMostInvolvedEmployees().toString());
+        System.out.printf("4. The total budget of committed project manpower is %d\n",
+                calculateTotalManpowerBudget());
+        System.out.printf("5. Below is an overview of total managed budget by junior employees (hourly wage <= 30):\n%s\n",
+                calculateManagedBudgetOverview(e -> e.getHourlyWage() <= 30).toString());
+        System.out.printf("6. Below is an overview of cumulative monthly project spends:\n%s\n",
+                calculateCumulativeMonthlySpends() == null ? "" : calculateCumulativeMonthlySpends().toString());
     }
 
     /**
@@ -132,7 +139,7 @@ public class PPS {
         // 2 Versions possible
             // 1 With hardcoded limit on minimum assigned projects
           return employees.stream().filter(
-          (employee) -> employee.getAssignedProjects().size() >= 10 )
+          (employee) -> employee.getAssignedProjects().size() >= MIN_ASSIGNMENT_COUNT )
           .collect( Collectors.toCollection( () -> new TreeSet<>( Comparator.comparing(Employee::getName) ) ) );
 
         // 2 based on the employee with the highest number of assigned projects
@@ -164,14 +171,18 @@ public class PPS {
      * @return
      */
     public Map<Month, Integer> calculateCumulativeMonthlySpends() {
-        // TODO J
-//        LocalDate d = LocalDate.now().getMonthValue();
-//        return projects.stream().collect(HashMap::new, (m, p) ->
-//                Arrays.stream(calculateMonths(p.getStartDate(), p.getEndDate()))
-//                        .map((mo) -> m.put(mo, p.getWorkingDays()
-//                                .stream().mapToInt(i -> i.getDayOfYear()).sum())), HashMap::putAll);
+        // TODO
+        // I TRIED
+//        return Arrays.stream(Month.values())
+//                .collect(HashMap::new, (map, m) ->
+//                        map.put(m, projects.stream().map(Project::getWorkingDays)
+//                                        .filter(sd -> sd.stream()
+//                                                .map(LocalDate::getMonth).equals(m))
+//                                        .map(LocalDate::getMonth)
+//                                .collect(0)
+//                                ),
+//                        HashMap::putAll);
 
-//        return Arrays.stream(Month.values()).collect(HashMap::new, (map, m) -> map.put(m, 0), HashMap::putAll).merge();
         return new HashMap<>();
     }
 
