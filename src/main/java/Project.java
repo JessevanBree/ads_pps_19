@@ -214,9 +214,10 @@ public class Project implements Comparable<Project> {
      */
     public void addCommitment(Employee employee, int hoursPerDay) {
         committedHoursPerDay.merge(
-                employee, // Key of entry
-                hoursPerDay, // Value of entry
-                Integer::sum // Sum up existing value with new value if key exists
+                employee, // set the employee as the key of this map entry
+                hoursPerDay, // set the hoursPerDay as the value of this map entry
+                Integer::sum // if an entry with the same key already exists then update the value of the entry
+                             // by summing up the existing value with the new hoursPerDay
         );
         // also register this project assignment for this employee,
         // in case that had not been done before

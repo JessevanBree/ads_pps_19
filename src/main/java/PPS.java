@@ -140,20 +140,18 @@ public class PPS {
      * @return
      */
     public Set<Employee> calculateMostInvolvedEmployees() {
-        // 2 Versions possible
-            // 1 With hardcoded limit on minimum assigned projects
           return employees.stream() // Stream the content of the employees set
                   .filter((employee) -> // Filter each employee in this stream
                           employee.getAssignedProjects().size() >= MIN_ASSIGNMENT_COUNT )
-                          // Allow the employee object to go through if their assigned project count is higher or equal than MIN_ASSIGNMENT_COUNT
+
+                            // NOTE: Allow the employee object to go through if their assigned project count is higher or equal than MIN_ASSIGNMENT_COUNT
+                            // There is also another way to interpret the method filter implementation which is based on the value of the employee with the
+                            // highest involvement which can be calculated by replacing MIN_ASSIGNMENT_COUNT with
+                            // employees.stream().mapToInt( (e) -> e.getAssignedProjects().size() ).max().getAsInt()
+                            // But we used the first solution based on the wording of the output example
+
                   .collect( Collectors.toCollection( () -> // Collect the filtered employees
                           new TreeSet<>( Comparator.comparing(Employee::getName) ) ) ); // Add the employees to a new treeset based on their name
-
-        // 2 based on the employee with the highest number of assigned projects
-//        return employees.stream().filter(
-//                (employee) -> employee.getAssignedProjects().size()
-//                        >= employees.stream().mapToInt( (e) -> e.getAssignedProjects().size() ).max().getAsInt() )
-//                .collect( Collectors.toCollection( () -> new TreeSet<>( Comparator.comparing(Employee::getName) ) ) );
     }
 
     /**
