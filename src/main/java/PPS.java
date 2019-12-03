@@ -100,7 +100,10 @@ public class PPS {
      * @return
      */
     public double calculateAverageHourlyWage() {
-        return employees.stream().mapToDouble(Employee::getHourlyWage).average().orElse(0.0);
+        return employees.stream() // Stream the content of the Employee set
+                .mapToDouble(Employee::getHourlyWage) // Calculate per employee what there hourly wage is
+                .average() // Calculate the average wage of all the employees in this stream
+                .orElse(0.0); // If there are no employees return the value 0.0
     }
 
     /**
@@ -110,7 +113,9 @@ public class PPS {
      * @return
      */
     public Project calculateLongestProject() {
-        return projects.stream().max(Comparator.comparing(Project::getNumWorkingDays)).orElse(null);
+        return projects.stream() // Stream the content of the projects set
+                .max(Comparator.comparing(Project::getNumWorkingDays)) // Check each project for their number of working days and save the highest value
+                .orElse(null); // If there are no projects return null
     }
 
     /**
@@ -122,9 +127,9 @@ public class PPS {
      * @return
      */
     public int calculateTotalManpowerBudget() {
-        return projects.stream()
-                .mapToInt(Project::calculateManpowerBudget)
-                .sum();
+        return projects.stream() // Stream the content of the projects set
+                .mapToInt(Project::calculateManpowerBudget) // Get the manpower budget of each project in the stream
+                .sum(); // Sum up all the manpower budgets of each project in the stream
     }
 
     /**
@@ -137,9 +142,12 @@ public class PPS {
     public Set<Employee> calculateMostInvolvedEmployees() {
         // 2 Versions possible
             // 1 With hardcoded limit on minimum assigned projects
-          return employees.stream().filter(
-          (employee) -> employee.getAssignedProjects().size() >= MIN_ASSIGNMENT_COUNT )
-          .collect( Collectors.toCollection( () -> new TreeSet<>( Comparator.comparing(Employee::getName) ) ) );
+          return employees.stream() // Stream the content of the employees set
+                  .filter((employee) -> // Filter each employee in this stream
+                          employee.getAssignedProjects().size() >= MIN_ASSIGNMENT_COUNT )
+                          // Allow the employee object to go through if their assigned project count is higher or equal than MIN_ASSIGNMENT_COUNT
+                  .collect( Collectors.toCollection( () -> // Collect the filtered employees
+                          new TreeSet<>( Comparator.comparing(Employee::getName) ) ) ); // Add the employees to a new treeset based on their name
 
         // 2 based on the employee with the highest number of assigned projects
 //        return employees.stream().filter(
@@ -157,9 +165,11 @@ public class PPS {
      * @return
      */
     public Map<Employee, Integer> calculateManagedBudgetOverview(Predicate<Employee> filter) {
-        return employees.stream()
-                .filter(filter)
-                .collect(Collectors.toMap(e -> e,  Employee::calculateManagedBudget));
+        return employees.stream() // Stream the content of the employees set
+                .filter(filter) // Filter the employees based on the predicate property filter
+                .collect(Collectors.toMap( // Add the employees that pass the filter to a new map
+                        e -> e,  // The key of the map entry is the employee object
+                        Employee::calculateManagedBudget)); // The value of the map entry is the managed budged of that employee
     }
 
     /**

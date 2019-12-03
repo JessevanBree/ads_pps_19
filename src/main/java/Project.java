@@ -7,15 +7,38 @@ import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Project implements Comparable<Project> {
+    private static final int N_FLOORS = 10;
+    private final static String[] subjects = {
+            "WIFI network upgrade",
+            "WIFI network installation",
+            "Surveillance cameras installation",
+            "Virtual workplaces",
+            "Floor insulation",
+            "Lighting replacements",
+            "Funiture replacements",
+            "Toilets refurbishment",
+            "Workspace rearrangement"};
+    private final static String[] locations = {
+            "KSH",
+            "BPH",
+            "WBH",
+            "MLH",
+            "LWB",
+            "TTH",
+            "CON",
+            "IWO",
+            "SCP"};
+    private static final int MAX_PROJECTS =
+            N_FLOORS * subjects.length * locations.length;
     private static Random randomizer = new Random();
     private String code;                // unique identifier of a project
-    private String title;
     private LocalDate startDate;        // the first working day of the project;
     private LocalDate endDate;          // the last working day of the project;
-    private Map<Employee,Integer> committedHoursPerDay;
+    private Map<Employee, Integer> committedHoursPerDay;
                                         // daily committed work hours on the project by employee
                                         // one employee may work on multiple different projects each day
                                         // employees will no overtime if more than 8 hours per day are committed
+    private String title;
 
     public Project(String projectCode) {
         this.code = projectCode;
@@ -46,149 +69,12 @@ public class Project implements Comparable<Project> {
         this.endDate = Calendar.lastWorkingDayUntil(endDate);
     }
 
-    @Override
-    public int compareTo(Project o) {
-        return this.code.compareTo(o.code);
-    }
-
-    /**
-     * provides the number of available working days for the project,
-     * excluding weekend days
-     * @return
-     */
-    public int getNumWorkingDays() {
-        return utils.Calendar.getNumWorkingDays(this.startDate, this.endDate);
-    }
-
-    /**
-     * provides a collection of dates that represent each of the available working days for the project,
-     * excluding weekend days
-     * @return
-     */
-    public Set<LocalDate> getWorkingDays() {
-        return Calendar.getWorkingDays(this.startDate, this.endDate);
-    }
-
-    // make sure Projects can be printed. The format is 'title(code)'
-    @Override
-    public String toString() {
-        return title + "(" + code + ")";
-    }
-
-    // make sure Projects can be added to a HashMap, HashSet
-    //  every project shall have a unique code
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Project project = (Project) o;
-        return code.equals(project.code) &&
-                title.equals(project.title) &&
-                startDate.equals(project.startDate) &&
-                endDate.equals(project.endDate);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(code, title, startDate, endDate);
-    }
-
-    /**
-     * add the specified hoursPerDay commitment for the specified employee on the project
-     * these hours should be added to any existing commitment of the employee on the project
-     * there is no check on maximum allocation of hours per day;
-     * if the total exceeds 8 per day on any day, the exployee will be expected to do overtime
-     * @param employee
-     * @param hoursPerDay
-     */
-    public void addCommitment(Employee employee, int hoursPerDay) {
-        // Add commitment entry or sum up the old and new hours per day
-        committedHoursPerDay.merge(employee, hoursPerDay, Integer::sum);
-        // also register this project assignment for this employee,
-        // in case that had not been done before
-        employee.getAssignedProjects().add(this);
-    }
-
-    /**
-     * Calculate total manpower budget for the project
-     * from the committed hours per employee per working day
-     * and the hourlyRate per employee
-     * @return
-     */
-    public int calculateManpowerBudget() {
-        // Turns the Map into a set of Map entries that can be used with a a stream
-        return committedHoursPerDay.entrySet()
-                .stream()
-                .mapToInt((key) ->
-                        key.getKey().getHourlyWage() * key.getValue() * getNumWorkingDays()
-                ).sum();
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public LocalDate getStartDate() {
-        return startDate;
-    }
-
-    public LocalDate getEndDate() {
-        return endDate;
-    }
-
-    public Map<Employee, Integer> getCommittedHoursPerDay() {
-        return committedHoursPerDay;
-    }
-
-    // Below are helper attributes and methods for sample generation
-    // and XML import and export
-
-    private static final int N_FLOORS = 10;
-
     private static String calculateTitle(int projectNr) {
         int floor = projectNr % N_FLOORS;
         projectNr /= N_FLOORS;
         int subjectIdx = projectNr % subjects.length;
         int locationIdx = (projectNr / subjects.length) % locations.length;
-        return  subjects[subjectIdx] + " - " + locations[locationIdx] + "-0" + floor;
-    }
-
-    private final static String[] subjects = {
-            "WIFI network upgrade",
-            "WIFI network installation",
-            "Surveillance cameras installation",
-            "Virtual workplaces",
-            "Floor insulation",
-            "Lighting replacements",
-            "Funiture replacements",
-            "Toilets refurbishment",
-            "Workspace rearrangement" };
-
-    private final static String[] locations = {
-            "KSH",
-            "BPH",
-            "WBH",
-            "MLH",
-            "LWB",
-            "TTH",
-            "CON",
-            "IWO",
-            "SCP" };
-
-    private static final int MAX_PROJECTS =
-            N_FLOORS * subjects.length * locations.length;
-
-
-    public void updateReferences(Employee employee) {
-        // replace the employee key of the commitment
-        Integer hoursPerDay;
-        if ((hoursPerDay = this.getCommittedHoursPerDay().remove(employee)) != null) {
-            this.getCommittedHoursPerDay().put(employee,hoursPerDay);
-        }
+        return subjects[subjectIdx] + " - " + locations[locationIdx] + "-0" + floor;
     }
 
     public static Set<Project> importProjectsFromXML(XMLParser xmlParser, Set<Project> projects) throws XMLStreamException {
@@ -251,6 +137,7 @@ public class Project implements Comparable<Project> {
         }
         return null;
     }
+
     public static Project importReferenceFromXML(XMLParser xmlParser, Set<Project> projects) throws XMLStreamException {
         if (xmlParser.nextBeginTag("project")) {
             String code = xmlParser.getAttributeValue(null, "code");
@@ -262,5 +149,123 @@ public class Project implements Comparable<Project> {
             return project;
         }
         return null;
+    }
+
+    @Override
+    public int compareTo(Project o) {
+        return this.code.compareTo(o.code);
+    }
+
+    /**
+     * provides the number of available working days for the project,
+     * excluding weekend days
+     *
+     * @return
+     */
+    public int getNumWorkingDays() {
+        return utils.Calendar.getNumWorkingDays(this.startDate, this.endDate);
+    }
+
+    /**
+     * provides a collection of dates that represent each of the available working days for the project,
+     * excluding weekend days
+     *
+     * @return
+     */
+    public Set<LocalDate> getWorkingDays() {
+        return Calendar.getWorkingDays(this.startDate, this.endDate);
+    }
+
+    // make sure Projects can be printed. The format is 'title(code)'
+    @Override
+    public String toString() {
+        return title + "(" + code + ")";
+    }
+
+    // make sure Projects can be added to a HashMap, HashSet
+    //  every project shall have a unique code
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Project project = (Project) o;
+        return code.equals(project.code) &&
+                title.equals(project.title) &&
+                startDate.equals(project.startDate) &&
+                endDate.equals(project.endDate);
+    }
+
+    // Below are helper attributes and methods for sample generation
+    // and XML import and export
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(code, title, startDate, endDate);
+    }
+
+    /**
+     * add the specified hoursPerDay commitment for the specified employee on the project
+     * these hours should be added to any existing commitment of the employee on the project
+     * there is no check on maximum allocation of hours per day;
+     * if the total exceeds 8 per day on any day, the exployee will be expected to do overtime
+     *
+     * @param employee
+     * @param hoursPerDay
+     */
+    public void addCommitment(Employee employee, int hoursPerDay) {
+        committedHoursPerDay.merge(
+                employee, // Key of entry
+                hoursPerDay, // Value of entry
+                Integer::sum // Sum up existing value with new value if key exists
+        );
+        // also register this project assignment for this employee,
+        // in case that had not been done before
+        employee.getAssignedProjects().add(this);
+    }
+
+    /**
+     * Calculate total manpower budget for the project
+     * from the committed hours per employee per working day
+     * and the hourlyRate per employee
+     *
+     * @return
+     */
+    public int calculateManpowerBudget() {
+        // Turns the Map into a set of Map entries that can be used with as a stream
+        return committedHoursPerDay.entrySet() // Turn the Map into a set of map entries so it can be streamed
+            .stream()
+            .mapToInt((entry) -> // Map a single entry so it can be used to calculate
+                    entry.getKey().getHourlyWage() * // Get the employee from key of the map entry and get its hourly wage
+                    entry.getValue() *       // Get the committed hours per day from the user in the entry
+                    getNumWorkingDays()      // Get the number of available working days for this project
+            ).sum(); // Sum up all the values from the previous map of all entries in the Map
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    public LocalDate getEndDate() {
+        return endDate;
+    }
+
+    public Map<Employee, Integer> getCommittedHoursPerDay() {
+        return committedHoursPerDay;
+    }
+
+    public void updateReferences(Employee employee) {
+        // replace the employee key of the commitment
+        Integer hoursPerDay;
+        if ((hoursPerDay = this.getCommittedHoursPerDay().remove(employee)) != null) {
+            this.getCommittedHoursPerDay().put(employee, hoursPerDay);
+        }
     }
 }
