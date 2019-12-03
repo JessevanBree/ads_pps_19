@@ -178,17 +178,25 @@ public class PPS {
      * @return
      */
     public Map<Month, Integer> calculateCumulativeMonthlySpends() {
+        // TreeMap to store the total amount of monthly spends, sorted ascending by month
         Map<Month, Integer> totalMonthlySpends = new TreeMap<>();
 
+        // Iterate over every project
         projects.forEach(p -> {
+            // HashMap to store the total work days for each month
             Map<Month, Integer> workdaysPerMonth = new HashMap<>();
 
+            // Iterate over all the working days of the project
             p.getWorkingDays().forEach(localDate ->
+                // For every month, add the amount of workdays to the map
                 workdaysPerMonth.merge(localDate.getMonth(), 1, Math::addExact)
             );
 
+            // Iterate over every month with its work days
             workdaysPerMonth.forEach((key, value) ->
+                // Go over the committed hours per day for the project
                 p.getCommittedHoursPerDay().forEach((employee, integer) -> {
+                    // For every worked hour, calculate the costs and add it to the totals map
                     totalMonthlySpends.merge(key, value * (employee.getHourlyWage() * integer), Math::addExact);
                 })
             );
