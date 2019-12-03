@@ -81,6 +81,8 @@ public class PPS {
         System.out.printf("%d employees have been assigned to %d projects:\n\n",
                 this.employees.size(), this.projects.size());
 
+        System.out.println(calculateCumulativeMonthlySpends().toString());
+
         System.out.printf("1. The average hourly wage of all employees is %.2f\n",
                 calculateAverageHourlyWage());
         System.out.printf("2. The longest project is '%s' with %d available working days\n",
@@ -171,19 +173,23 @@ public class PPS {
      * @return
      */
     public Map<Month, Integer> calculateCumulativeMonthlySpends() {
-        // TODO
-        // I TRIED
-//        return Arrays.stream(Month.values())
-//                .collect(HashMap::new, (map, m) ->
-//                        map.put(m, projects.stream().map(Project::getWorkingDays)
-//                                        .filter(sd -> sd.stream()
-//                                                .map(LocalDate::getMonth).equals(m))
-//                                        .map(LocalDate::getMonth)
-//                                .collect(0)
-//                                ),
-//                        HashMap::putAll);
+        Map<Month, Integer> totalMonthlySpends = new TreeMap<>();
 
-        return new HashMap<>();
+        projects.forEach(p -> {
+            Map<Month, Integer> workdaysPerMonth = new HashMap<>();
+
+            p.getWorkingDays().forEach(localDate ->
+                workdaysPerMonth.merge(localDate.getMonth(), 1, Math::addExact)
+            );
+
+            workdaysPerMonth.forEach((key, value) ->
+                p.getCommittedHoursPerDay().forEach((employee, integer) -> {
+                    totalMonthlySpends.merge(key, value * (employee.getHourlyWage() * integer), Math::addExact);
+                })
+            );
+        });
+
+        return totalMonthlySpends;
     }
 
     public String getName() {
