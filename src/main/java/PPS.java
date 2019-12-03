@@ -80,9 +80,6 @@ public class PPS {
 
         System.out.printf("%d employees have been assigned to %d projects:\n\n",
                 this.employees.size(), this.projects.size());
-
-        System.out.println(calculateCumulativeMonthlySpends().toString());
-
         System.out.printf("1. The average hourly wage of all employees is %.2f\n",
                 calculateAverageHourlyWage());
         System.out.printf("2. The longest project is '%s' with %d available working days\n",
